@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+  <title>Форма</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <img class="logo" src="img/logo.svg" alt="Логотип Седона">
+      <div class="header__menu">
+        <h2 class="visually-hidden">Меню</h2>
+        <a href="#" class="menu__btn">
+          <span class="menu__line"></span>
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="index.html" class="white__title">Главная</a></li>
+          <li class="menu__item"><a href="catalog.html" class="white__title">Фото и видео</a></li>
+          <li class="menu__item"><a href="#" class="white__title">Форма Отзыва</a></li>
+          <li class="menu__item"><a href="#" class="white__title">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h2 class="visually-hidden">Седона</h2>
+      <div class="hero__content">
+        <h1 class="hero__logo">SEDONA</h1>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__info">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <h2 class="visually__hiden">отзывы</h2>
+      <h2 class=" black__title">Оставьте свой отзыв</h2>
+      <p class="black__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+    </section>
+
+    <section class="form">
+      <div class="form__block">
+        <h2 class="visually-hidden">Заполните форму</h2>
+      <h2 class=" black__title">Представьтесь:</h2>
+      <form class="form__field" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="form__label" for="name">ИМЯ*:</label>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Пётр">
+
+          <label class="form__label" for="lastname">ФАМИЛИЯ*:</label>
+          <input class="form__input" type="text" name="lastname" id="lastname" placeholder="Пустота">
+
+          <label class="form__label" for="surname">Отчество:</label>
+          <input class="form__input" type="text" name="surname" id="surname" placeholder="Викторович">
+      </form>
+    </div>
+
+    <div class="contacts__block">
+      <h2 class=" black__title">Контактная информация:</h2>
+      <form class="contacts__field" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="contacts__label" for="tel">Контактный телефон*:</label>
+        <input class="phone__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+
+        <label class="contacts__label" for="email">Электронная почта*:</label>
+        <input class="imail__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+    </form>
+    </div>
+
+    <div class="grade__block">
+      <form class="grade__field" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="grade__label black__title">Ваше Общее впечатление:</label>
+        <input class="grade__input" type="radio" name="grade"> Скорее положительное
+        <input class="grade__input" type="radio" name="grade"> Скорее отрицательное
+        <input class="grade__input" type="radio" name="grade"> Затрудняюсь ответить
+    </form>
+    </div>
+
+    <div class="sight__block">
+      <form class="sight__field" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="sight__label black__title">посещенные достопримечательности:</label>
+        <input class="sight__input" type="checkbox" name="sight"> Мост Дьявола
+        <input class="sight__input" type="checkbox" name="sight"> Гора-Колокол
+        <input class="sight__input" type="checkbox" name="sight"> Слайд-парк
+        <input class="sight__input" type="checkbox" name="sight"> Красные скалы
+    </form>
+    </div>
+
+    <div class="review__block">
+      <form class="review__field" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="review__label black__title" for="review">Опишите свои эмоции:</label>
+        <textarea class="review__input" name="review" id="review" cols="30" rows="10"></textarea>
+        <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <span class="Necessarily"></span>
+    </form>
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__block">
+      <h2 class="visually-hidden">Футер</h2>
+      <h2 class="black__title">#visitSEDONA</h2>
+    </div>
+    <div class="socials">
+      <ul class="social-list">
+        <li class="social__item">
+          <a href="#"><img src="img/vk.svg" alt="vk"></a>
+        </li>
+        <li class="social__item">
+          <a href="#"><img src="img/telegramm.svg" alt="telegramm"></a>
+        </li>
+        <li class="social__item">
+          <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+        </li>
+      </ul>
+      <div class="html-academy">
+        <span class="black__text">
+          Разработано <img src="img/html-academy-logo.svg" alt="html academy">
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup">
+    <h2 class="visually-hidden">Ошибка</h2>
+    <span class="black__title">ЧТО-ТО ПОШЛО НЕ ТАК!</span>
+    <p class="black__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="button" type="button">OK</button>
+  </div>
+
+  <div class="modal">
+    <h2 class="visually-hidden">Ваш отзыв отправлен!</h2>
+    <span class="black__title">Ваш отзыв отправлен!</span>
+    <p class="black__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="button" type="button">Закрыть окно</button>
+  </div>
+</body>
+</html>
