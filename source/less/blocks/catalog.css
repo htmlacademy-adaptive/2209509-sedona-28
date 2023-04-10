@@ -1,0 +1,23 @@
+.catalog__list {
+  list-style: none;
+}
+.catalog__item {
+  padding: 20px 24px;
+}
+.black__subtitle {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.author {
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+}
+.like-quantity {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+}

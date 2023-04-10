@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -18,10 +19,10 @@
             <span class="menu__line"></span>
           </a>
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="white__title">Главная</a></li>
-            <li class="menu__item"><a href="catalog.html" class="white__title">Фото и видео</a></li>
-            <li class="menu__item"><a href="form.html" class="white__title">Форма Отзыва</a></li>
-            <li class="menu__item"><a href="#" class="white__title">HTML ACADEMY</a></li>
+            <li class="menu__item"><a href="#" class="link white__title">Главная</a></li>
+            <li class="menu__item"><a href="catalog.html" class="link white__title">Фото и видео</a></li>
+            <li class="menu__item"><a href="form.html" class="link white__title">Форма Отзыва</a></li>
+            <li class="menu__item"><a href="#" class="link white__title">HTML ACADEMY</a></li>
           </ul>
         </div>
       </div>
@@ -30,17 +31,14 @@
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
       <div class="hero__block">
-        <span class="hero__subtitle">WELCOME</span>
-        <span class="hero__slogan">to the gorgeouse</span>
-        <h2 class="hero__logo">SEDONA</h2>
-        <p class="hero__quote">"Because the Grand Canyon sucks!"</p>
+        <img class="hero__logo" src="img/sedona-logo.svg" alt="Логотип Седона">
       </div>
     </section>
 
     <section class="about">
-      <div class="about__info">
+      <div class="about__info title__info">
         <h2 class="visually-hidden">О Седоне</h2>
-      <span class=" black__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</span>
+      <span class="black__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</span>
       <p class="black__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
     </section>
@@ -71,13 +69,13 @@
           <h2 class="black__title">Сувениры</h2>
           <p class="black__text">Не только китайского но и местного производства!</p>
         </div>
-        <div class="content-item__image">
-          <img src="img/devil-bridge.jpg" alt="Мост дьявола">
-        </div>
         <div class="content-item__blue">
           <h2 class="white__title">Там есть мост дьявола</h2>
           <span class="number__two"></span>
           <p class="white__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <div class="content-item__image">
+          <img src="img/devil-bridge.jpg" alt="Мост дьявола">
         </div>
         <div class="content-item__grey">
           <h2 class="black__title">Небольшая площадь</h2>
@@ -98,16 +96,16 @@
     </section>
 
     <section class="search">
-      <div class="search__block">
+      <div class="search__block title__info">
         <h2 class="visually-hidden">Найти гостиницу</h2>
         <h2 class="black__title">Заинтересовались?</h2>
         <p class="black__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button" type="button">Найти гостиницу</button>
+        <button class="button white__title" type="button">Найти гостиницу</button>
       </div>
     </section>
 
     <section class="map">
-      <h2 class="visually__hiden">Карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
 
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A555e8e444a22b77cc9825fc0d47c124b17db7fa9149082e8ceddd896fd75d9ca&amp;source=constructor" height="602"></iframe>
 

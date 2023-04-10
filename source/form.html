@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
   <title>Форма</title>
 </head>
 <body>
@@ -17,10 +18,10 @@
           <span class="menu__line"></span>
         </a>
         <ul class="menu__list">
-          <li class="menu__item"><a href="index.html" class="white__title">Главная</a></li>
-          <li class="menu__item"><a href="catalog.html" class="white__title">Фото и видео</a></li>
-          <li class="menu__item"><a href="#" class="white__title">Форма Отзыва</a></li>
-          <li class="menu__item"><a href="#" class="white__title">HTML ACADEMY</a></li>
+          <li class="menu__item"><a href="index.html" class="link white__title">Главная</a></li>
+          <li class="menu__item"><a href="catalog.html" class="link white__title">Фото и видео</a></li>
+          <li class="menu__item"><a href="#" class="link white__title">Форма Отзыва</a></li>
+          <li class="menu__item"><a href="#" class="link white__title">HTML ACADEMY</a></li>
         </ul>
       </div>
     </div>
@@ -29,15 +30,14 @@
   <main class="main">
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
-      <div class="hero__content">
-        <h1 class="hero__logo">SEDONA</h1>
+      <div class="hero__block">
+        <img src="img/sedona-logo.svg" alt="Логотип Седона">
       </div>
     </section>
 
     <section class="about">
-      <div class="about__info">
+      <div class="about__info title__info">
         <h2 class="visually-hidden">Отзывы</h2>
-        <h2 class="visually__hiden">отзывы</h2>
       <h2 class=" black__title">Оставьте свой отзыв</h2>
       <p class="black__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
@@ -48,25 +48,25 @@
         <h2 class="visually-hidden">Заполните форму</h2>
       <h2 class=" black__title">Представьтесь:</h2>
       <form class="form__field" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="form__label" for="name">ИМЯ*:</label>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Пётр">
+          <label class="form__label black__text" for="name">ИМЯ*:</label>
+          <input class="form__input input" type="text" name="name" id="name" placeholder="Пётр">
 
-          <label class="form__label" for="lastname">ФАМИЛИЯ*:</label>
-          <input class="form__input" type="text" name="lastname" id="lastname" placeholder="Пустота">
+          <label class="form__label black__text" for="lastname">ФАМИЛИЯ*:</label>
+          <input class="form__input input" type="text" name="lastname" id="lastname" placeholder="Пустота">
 
-          <label class="form__label" for="surname">Отчество:</label>
-          <input class="form__input" type="text" name="surname" id="surname" placeholder="Викторович">
+          <label class="form__label black__text" for="surname">Отчество:</label>
+          <input class="form__input input" type="text" name="surname" id="surname" placeholder="Викторович">
       </form>
     </div>
 
     <div class="contacts__block">
       <h2 class=" black__title">Контактная информация:</h2>
       <form class="contacts__field" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="contacts__label" for="tel">Контактный телефон*:</label>
-        <input class="phone__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+        <label class="contacts__label black__text" for="tel">Контактный телефон*:</label>
+        <input class="phone__input input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
 
-        <label class="contacts__label" for="email">Электронная почта*:</label>
-        <input class="imail__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+        <label class="contacts__label black__text" for="email">Электронная почта*:</label>
+        <input class="phone__input input" type="email" name="email" id="email" placeholder="Введите e-mail">
     </form>
     </div>
 
@@ -92,8 +92,8 @@
     <div class="review__block">
       <form class="review__field" action="https://echo.htmlacademy.ru/" method="get">
         <label class="review__label black__title" for="review">Опишите свои эмоции:</label>
-        <textarea class="review__input" name="review" id="review" cols="30" rows="10"></textarea>
-        <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <textarea class="review__input input" name="review" id="review" cols="30" rows="10"></textarea>
+        <button class="button white__title" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         <span class="Necessarily"></span>
     </form>
     </div>
@@ -129,14 +129,14 @@
     <h2 class="visually-hidden">Ошибка</h2>
     <span class="black__title">ЧТО-ТО ПОШЛО НЕ ТАК!</span>
     <p class="black__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="button" type="button">OK</button>
+    <button class="button white__title" type="button">OK</button>
   </div>
 
   <div class="modal">
     <h2 class="visually-hidden">Ваш отзыв отправлен!</h2>
     <span class="black__title">Ваш отзыв отправлен!</span>
     <p class="black__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-    <button class="button" type="button">Закрыть окно</button>
+    <button class="button white__title" type="button">Закрыть окно</button>
   </div>
 </body>
 </html>

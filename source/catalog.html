@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
   <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -17,10 +18,10 @@
           <span class="menu__line"></span>
         </a>
         <ul class="menu__list">
-          <li class="menu__item"><a href="index.html" class="white__title">Главная</a></li>
-          <li class="menu__item"><a href="#" class="white__title">Фото и видео</a></li>
-          <li class="menu__item"><a href="form.html" class="white__title">Форма Отзыва</a></li>
-          <li class="menu__item"><a href="#" class="white__title">HTML ACADEMY</a></li>
+          <li class="menu__item"><a href="index.html" class="link white__title">Главная</a></li>
+          <li class="menu__item"><a href="#" class="link white__title">Фото и видео</a></li>
+          <li class="menu__item"><a href="form.html" class="link white__title">Форма Отзыва</a></li>
+          <li class="menu__item"><a href="#" class="link white__title">HTML ACADEMY</a></li>
         </ul>
       </div>
     </div>
@@ -29,15 +30,15 @@
   <main class="main">
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
-      <div class="hero__content">
-        <h1 class="hero__logo">SEDONA</h1>
+      <div class="hero__block">
+        <img src="img/sedona-logo.svg" alt="Логотип Седона">
       </div>
     </section>
 
     <section class="about">
-      <div class="about__info">
+      <div class="about__info title__info">
         <h2 class="visually-hidden">О Седоне</h2>
-        <h2 class="visually__hiden">Фото и видео</h2>
+        <h2 class="visually-hidden">Фото и видео</h2>
       <span class=" black__title">Фото и видео</span>
       <p class="black__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </div>
@@ -48,7 +49,7 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img src="img/non-native-spaces.jpg" alt="неродные просторы">
+            <img class="catalog-img" src="img/non-native-spaces.jpg" alt="неродные просторы">
             <h2 class="black__subtitle">неродные просторы</h2>
             <span class="author">Автор фото: Борис</span>
             <div class="like">
@@ -60,7 +61,7 @@
           </li>
 
           <li class="catalog__item">
-            <img src="img/local-vegetation.jpg" alt="Местная растительность">
+            <img class="catalog-img" src="img/local-vegetation.jpg" alt="Местная растительность">
             <h2 class="black__subtitle">Местная растительность</h2>
             <span class="author">Автор фото: Сергей</span>
             <div class="like">
@@ -72,7 +73,7 @@
           </li>
 
           <li class="catalog__item">
-            <img src="img/Road-to-the-north.jpg" alt="Местная растительность">
+            <img class="catalog-img" src="img/Road-to-the-north.jpg" alt="Местная растительность">
             <h2 class="black__subtitle">Дорога на север</h2>
             <span class="author">Автор фото: Петр</span>
             <div class="like">
@@ -84,7 +85,7 @@
           </li>
 
           <li class="catalog__item">
-            <img src="img/devil's-bridge.jpg" alt="Мост дьявола">
+            <img class="catalog-img" src="img/devil's-bridge.jpg" alt="Мост дьявола">
             <h2 class="black__subtitle">Мост дьявола</h2>
             <span class="author">Автор фото: Антон</span>
             <div class="like">
@@ -99,12 +100,12 @@
     </section>
 
     <section class="frame">
-      <div class="frame__block">
+      <div class="frame__block title__info">
         <h2 class="visually-hidden">Видео о Седоне</h2>
         <h2 class=" black__title">Все еще сомневаетесь?</h2>
         <p class="black__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gA6pxmdMiOQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img src="img/catalog-video.jpg" alt="Видео-презентация">
       </div>
     </section>
   </main>

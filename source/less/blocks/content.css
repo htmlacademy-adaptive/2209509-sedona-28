@@ -1,0 +1,21 @@
+.content__block {
+  margin: 0 auto;
+}
+.content-item__blue {
+  background-color: #81b3d2;
+  margin: 0;
+  padding: 18px 37px;
+}
+.content-item__white {
+  margin: 0;
+  padding: 22px 33px;
+}
+.content-item__image {
+  background-color: #e5f2fa;
+  padding: 0;
+}
+.content-item__grey {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 24px 26px;
+}
