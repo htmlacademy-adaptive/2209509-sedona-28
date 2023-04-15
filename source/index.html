@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="header">
-      <div class="header__container">
-        <img class="logo" src="img/logo.svg" alt="Логотип Седона">
-        <div class="header__menu">
+      <div class="header-block">
+        <img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона">
+        <div class="header-block__menu">
           <h2 class="visually-hidden">Меню</h2>
           <a href="#" class="menu__btn">
             <span class="menu__line"></span>
           </a>
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="white__title">Главная</a></li>
-            <li class="menu__item"><a href="catalog.html" class="white__title">Фото и видео</a></li>
-            <li class="menu__item"><a href="form.html" class="white__title">Форма Отзыва</a></li>
-            <li class="menu__item"><a href="#" class="white__title">HTML ACADEMY</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link">Фото и видео</a></li>
+            <li class="menu__item"><a href="form.html" class="menu__link">Форма Отзыва</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">HTML ACADEMY</a></li>
           </ul>
         </div>
       </div>
@@ -29,85 +30,82 @@
     <main class="main">
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
-      <div class="hero__block">
-        <span class="hero__subtitle">WELCOME</span>
-        <span class="hero__slogan">to the gorgeouse</span>
-        <h2 class="hero__logo">SEDONA</h2>
-        <p class="hero__quote">"Because the Grand Canyon sucks!"</p>
+      <div class="hero-block">
+        <img class="hero-block__logo" src="img/sedona-logo.svg" alt="Логотип Седона">
       </div>
     </section>
 
     <section class="about">
-      <div class="about__info">
+      <div class="about-block">
         <h2 class="visually-hidden">О Седоне</h2>
-      <span class=" black__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</span>
-      <p class="black__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <span class="about-block__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</span>
+      <p class="about-block__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
     </section>
 
     <section class="content">
       <h2 class="visually-hidden">Почему вы должны посетить Седону?</h2>
-      <div class="content__block">
-        <div class="content-item__blue">
-          <h2 class="white__title">Настоящий городок</h2>
-          <span class="number__one"></span>
-          <p class="white__text">Седона не аттракцион для туристов, там течет своя жизнь!</p>
+      <div class="content-block">
+        <div class="content-blue">
+          <h2 class="content-blue__title">Настоящий городок</h2>
+          <span class="number-one"></span>
+          <p class="content-blue__text">Седона не аттракцион для туристов, там течет своя жизнь!</p>
         </div>
-        <div class="content-item__image">
-          <img src="img/sedona-hotel.jpg" alt="Жильё в Седоне">
+        <div class="content__picture">
+          <img class="content__img" src="img/sedona-hotel.jpg" alt="Жильё в Седоне">
         </div>
-        <div class="content-item__white">
+        <div class="content-white">
           <img src="img/home.svg" alt="Жильё" class="content-item__icon">
-          <h2 class="black__title">Жилье</h2>
-          <p class="black__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <h2 class="content-white__title">Жилье</h2>
+          <p class="content-white__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="content-item__white">
+        <div class="content-white">
           <img src="img/burger.svg" alt="Еда" class="content-item__icon">
-          <h2 class="black__title">Еда</h2>
-          <p class="black__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <h2 class="content-white__title">Еда</h2>
+          <p class="content-white__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="content-item__white">
+        <div class="content-white">
           <img src="img/gift.svg" alt="Сувениры" class="content-item__icon">
-          <h2 class="black__title">Сувениры</h2>
-          <p class="black__text">Не только китайского но и местного производства!</p>
+          <h2 class="content-white__title">Сувениры</h2>
+          <p class="content-white__text">Не только китайского но и местного производства!</p>
         </div>
-        <div class="content-item__image">
-          <img src="img/devil-bridge.jpg" alt="Мост дьявола">
+        <div class="content-blue">
+          <h2 class="content-blue__title">Там есть мост дьявола</h2>
+          <span class="number-two"></span>
+          <p class="content-blue__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <div class="content-item__blue">
-          <h2 class="white__title">Там есть мост дьявола</h2>
-          <span class="number__two"></span>
-          <p class="white__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="content__image">
+          <img class="content__img" src="img/devil-bridge.jpg" alt="Мост дьявола">
         </div>
-        <div class="content-item__grey">
-          <h2 class="black__title">Небольшая площадь</h2>
-          <span class="number__three"></span>
-          <p class="black__text">Все интересные места находятся очень близко</p>
+        <div class="content-grey">
+          <h2 class="content-grey__title">Небольшая площадь</h2>
+          <span class="number-three"></span>
+          <p class="content-grey__text">Все интересные места находятся очень близко</p>
         </div>
-        <div class="content-item__grey">
-          <h2 class="black__title">Красивая дорога</h2>
-          <span class="number__four"></span>
-          <p class="black__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <div class="content-grey">
+          <h2 class="content-grey__title">Красивая дорога</h2>
+          <span class="number-four"></span>
+          <p class="content-grey__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div class="content-item__grey">
-          <h2 class="black__title">Мало туристов</h2>
-          <span class="number__five"></span>
-          <p class="black__text">Большинство едет в Гранд каньон и толпится там</p>
+        <div class="content-grey">
+          <h2 class="content-grey__title">Мало туристов</h2>
+          <span class="number-five"></span>
+          <p class="content-grey__text">Большинство едет в Гранд каньон и толпится там</p>
         </div>
       </div>
     </section>
 
     <section class="search">
-      <div class="search__block">
+      <div class="search-block">
         <h2 class="visually-hidden">Найти гостиницу</h2>
-        <h2 class="black__title">Заинтересовались?</h2>
-        <p class="black__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <h2 class="search-block__title">Заинтересовались?</h2>
+        <p class="search-block__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button" type="button">Найти гостиницу</button>
       </div>
     </section>
 
     <section class="map">
-      <h2 class="visually__hiden">Карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
 
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A555e8e444a22b77cc9825fc0d47c124b17db7fa9149082e8ceddd896fd75d9ca&amp;source=constructor" height="602"></iframe>
 
@@ -115,28 +113,28 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__block">
+    <div class="footer-block">
       <h2 class="visually-hidden">Футер</h2>
-      <h2 class="black__title">#visitSEDONA</h2>
-    </div>
+      <h2 class="footer__title">#visitSEDONA</h2>
     <div class="socials">
-      <ul class="social-list">
-        <li class="social__item">
-          <a href="#"><img src="img/vk.svg" alt="vk"></a>
+      <ul class="socials-list">
+        <li class="socials__item">
+          <a class="socials__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
         </li>
         <li class="social__item">
-          <a href="#"><img src="img/telegramm.svg" alt="telegramm"></a>
+          <a class="socials__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
         </li>
         <li class="social__item">
-          <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+          <a class="socials__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
         </li>
       </ul>
       <div class="html-academy">
-        <span class="black__text">
-          Разработано <img src="img/html-academy-logo.svg" alt="html academy">
+        <span class="html-academy__text">
+          Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
         </span>
       </div>
     </div>
+  </div>
   </footer>
   </body>
 </html>
