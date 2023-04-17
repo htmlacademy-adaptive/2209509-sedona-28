@@ -13,18 +13,18 @@
     <header class="header">
       <div class="header-block">
         <img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона">
-        <div class="header-block__menu">
+        <nav class="header-menu">
           <h2 class="visually-hidden">Меню</h2>
-          <a href="#" class="menu__btn">
-            <span class="menu__line"></span>
-          </a>
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a href="catalog.html" class="menu__link">Фото и видео</a></li>
-            <li class="menu__item"><a href="form.html" class="menu__link">Форма Отзыва</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">HTML ACADEMY</a></li>
+          <button type="button" class="header-menu__btn" aria-label="открыть меню" aria-expanded="true">
+            <span class="header-menu__line">открыть меню</span>
+          </button>
+          <ul class="header-menu__list">
+              <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a></li>
+              <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
+              <li class="header-menu__item"><a href="form.html" class="header-menu__link">Форма Отзыва</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">HTML ACADEMY</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -38,7 +38,7 @@
     <section class="about">
       <div class="about-block">
         <h2 class="visually-hidden">О Седоне</h2>
-      <span class="about-block__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</span>
+      <span class="about-block__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий&nbsp;большего!</span>
       <p class="about-block__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
     </section>
@@ -55,17 +55,17 @@
           <img class="content__img" src="img/sedona-hotel.jpg" alt="Жильё в Седоне">
         </div>
         <div class="content-white">
-          <img src="img/home.svg" alt="Жильё" class="content-item__icon">
+          <img src="img/home.svg" alt="Жильё" class="content-white__icon">
           <h2 class="content-white__title">Жилье</h2>
           <p class="content-white__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="content-white">
-          <img src="img/burger.svg" alt="Еда" class="content-item__icon">
+          <img src="img/burger.svg" alt="Еда" class="content-white__icon">
           <h2 class="content-white__title">Еда</h2>
           <p class="content-white__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="content-white">
-          <img src="img/gift.svg" alt="Сувениры" class="content-item__icon">
+          <img src="img/gift.svg" alt="Сувениры" class="content-white__icon">
           <h2 class="content-white__title">Сувениры</h2>
           <p class="content-white__text">Не только китайского но и местного производства!</p>
         </div>
@@ -107,7 +107,7 @@
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
 
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A555e8e444a22b77cc9825fc0d47c124b17db7fa9149082e8ceddd896fd75d9ca&amp;source=constructor" height="602"></iframe>
+      <iframe width="100%" title="Карта" src="https://yandex.ru/map-widget/v1/?um=constructor%3A555e8e444a22b77cc9825fc0d47c124b17db7fa9149082e8ceddd896fd75d9ca&amp;source=constructor" height="602"></iframe>
 
     </section>
   </main>
@@ -121,18 +121,18 @@
         <li class="socials__item">
           <a class="socials__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
         </li>
-        <li class="social__item">
+        <li class="socials__item">
           <a class="socials__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
         </li>
-        <li class="social__item">
+        <li class="socials__item">
           <a class="socials__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
         </li>
       </ul>
-      <div class="html-academy">
-        <span class="html-academy__text">
-          Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
-        </span>
-      </div>
+    </div>
+    <div class="html-academy">
+      <span class="html-academy__text">
+        Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
+      </span>
     </div>
   </div>
   </footer>

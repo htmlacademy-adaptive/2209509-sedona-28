@@ -11,17 +11,17 @@
 <body>
   <header class="header">
     <div class="header-block">
-      <img class="logo" src="img/logo.svg" alt="Логотип Седона">
-      <div class="header__menu">
+      <img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона">
+      <div class="header-menu">
         <h2 class="visually-hidden">Меню</h2>
-        <a href="#" class="menu__btn">
-          <span class="menu__line"></span>
-        </a>
-        <ul class="menu__list">
-            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a href="catalog.html" class="menu__link">Фото и видео</a></li>
-            <li class="menu__item"><a href="form.html" class="menu__link">Форма Отзыва</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">HTML ACADEMY</a></li>
+        <button type="button" class="header-menu__btn" aria-label="открыть меню" aria-expanded="true">
+          <span class="header-menu__line"></span>
+        </button>
+        <ul class="header-menu__list">
+            <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a></li>
+            <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
+            <li class="header-menu__item"><a href="form.html" class="header-menu__link">Форма Отзыва</a></li>
+            <li class="header-menu__item"><a href="#" class="header-menu__link">HTML ACADEMY</a></li>
         </ul>
       </div>
     </div>
@@ -109,18 +109,18 @@
         <li class="socials__item">
           <a class="socials__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
         </li>
-        <li class="social__item">
+        <li class="socials__item">
           <a class="socials__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
         </li>
-        <li class="social__item">
+        <li class="socials__item">
           <a class="socials__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
         </li>
       </ul>
-      <div class="html-academy">
-        <span class="html-academy__text">
-          Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
-        </span>
-      </div>
+    </div>
+    <div class="html-academy">
+      <span class="html-academy__text">
+        Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
+      </span>
     </div>
   </div>
   </footer>
@@ -129,7 +129,7 @@
     <h2 class="visually-hidden">Ошибка</h2>
     <span class="popup__title">ЧТО-ТО ПОШЛО НЕ ТАК!</span>
     <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="button white__title" type="button">OK</button>
+    <button class="button" type="button">OK</button>
   </div>
 
   <div class="modal">
