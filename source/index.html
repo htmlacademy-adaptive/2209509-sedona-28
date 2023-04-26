@@ -12,12 +12,12 @@
 
     <header class="header">
       <div class="header-block">
-        <img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона">
+        <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
         <nav class="header-menu">
           <h2 class="visually-hidden">Меню</h2>
-          <button type="button" class="header-menu__btn visually-hidden" aria-label="открыть меню" aria-expanded="true">
-            <span class="header-menu__line">открыть меню</span>
-          </button>
+          <div class="header-menu__btn">
+            <span class="header-menu__line"></span>
+          </div>
           <ul class="header-menu__list">
               <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a></li>
               <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
@@ -31,7 +31,7 @@
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
       <div class="hero-block">
-        <img class="hero-block__logo" src="img/sedona-logo.svg" alt="Логотип Седона">
+        <img class="hero-block__logo" src="img/sedona-page-logo.svg" alt="Логотип Седона">
       </div>
     </section>
 
@@ -49,11 +49,14 @@
         <div class="content-blue">
           <div class="content-blue__info">
           <h2 class="content-blue__title">Настоящий городок</h2>
-          <span class="number-one"></span>
+          <span class="content-blue__number">— №1 —</span>
           <p class="content-blue__text">Седона не аттракцион для туристов, там течет своя жизнь!</p>
         </div>
           <div class="content-blue__hotel">
+            <picture>
+              <source media="(min-width: 320px)" srcset="img/hotel-sedona-mobile.jpg">
             <img class="content-blue__img" src="/img/hotel-sedona-mobile.jpg" alt="Отель в Cедоне">
+          </picture>
           </div>
         </div>
         <div class="content-white">
@@ -76,27 +79,30 @@
         <div class="content-blue">
           <div class="content-blue__info">
           <h2 class="content-blue__title">Там есть мост дьявола</h2>
-          <span class="number-two"></span>
+          <span class="content-blue__number">— №2 —</span>
           <p class="content-blue__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
           <div class="content-blue__bridge">
+            <picture>
+              <source media="(min-width: 320px)" srcset="/img/devil's-bridge-mobile.jpg">
             <img class="content-blue__img" src="/img/devil's-bridge-mobile.jpg" alt="Отель в Cедоне">
+          </picture>
           </div>
         </div>
         <div class="content-grey">
         <div class="content-grey__block">
           <h2 class="content-grey__title">Небольшая площадь</h2>
-          <span class="number-three"></span>
+          <span class="content-grey__number">— №3 —</span>
           <p class="content-grey__text">Все интересные места находятся очень близко</p>
         </div>
         <div class="content-grey__block">
           <h2 class="content-grey__title">Красивая дорога</h2>
-          <span class="number-four"></span>
+          <span class="content-grey__number">— №4 —</span>
           <p class="content-grey__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="content-grey__block">
           <h2 class="content-grey__title">Мало туристов</h2>
-          <span class="number-five"></span>
+          <span class="content-grey__number">— №5 —</span>
           <p class="content-grey__text">Большинство едет в Гранд каньон и толпится там</p>
         </div>
       </div>

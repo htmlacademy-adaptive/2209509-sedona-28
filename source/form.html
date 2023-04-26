@@ -11,12 +11,12 @@
 <body>
   <header class="header">
     <div class="header-block">
-      <img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона">
+      <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
       <div class="header-menu">
         <h2 class="visually-hidden">Меню</h2>
-        <button type="button" class="header-menu__btn visually-hidden" aria-label="открыть меню" aria-expanded="true">
+        <div class="header-menu__btn">
           <span class="header-menu__line"></span>
-        </button>
+        </div>
         <ul class="header-menu__list">
             <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a></li>
             <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
@@ -44,19 +44,24 @@
     </section>
 
     <section class="form">
+      <div class="inputs">
       <div class="form-block">
         <h2 class="visually-hidden">Заполните форму</h2>
       <h2 class="form-block__title">Представьтесь:</h2>
       <form class="form-block__field" action="https://echo.htmlacademy.ru/" method="get">
           <label class="form-block__label" for="name">ИМЯ*:</label>
           <input class="form-block__input" type="text" name="name" id="name" placeholder="Пётр">
+        </form>
 
+        <form class="form-block__field" action="https://echo.htmlacademy.ru/" method="get">
           <label class="form-block__label" for="lastname">ФАМИЛИЯ*:</label>
           <input class="form-block__input" type="text" name="lastname" id="lastname" placeholder="Пустота">
+        </form>
 
+        <form class="form-block__field" action="https://echo.htmlacademy.ru/" method="get">
           <label class="form-block__label" for="surname">Отчество:</label>
           <input class="form-block__input" type="text" name="surname" id="surname" placeholder="Викторович">
-      </form>
+        </form>
     </div>
 
     <div class="contacts-block">
@@ -64,15 +69,18 @@
       <form class="contacts-block__field" action="https://echo.htmlacademy.ru/" method="get">
         <label class="contacts-block__label" for="tel">Контактный телефон*:</label>
         <input class="contacts-block__input-tel" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+      </form>
 
+      <form class="contacts-block__field" action="https://echo.htmlacademy.ru/" method="get">
         <label class="contacts-block__label" for="email">Электронная почта*:</label>
         <input class="contacts-block__input-email" type="email" name="email" id="email" placeholder="Введите e-mail">
-    </form>
+      </form>
     </div>
+  </div>
 
     <div class="grade-block">
+      <h2 class="grade-block__label">Ваше Общее впечатление:</h2>
       <form class="grade-block__field" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="grade-block__label">Ваше Общее впечатление:</label>
         <input class="grade-block__input" type="radio" name="grade"> Скорее положительное
         <input class="grade-block__input" type="radio" name="grade"> Скорее отрицательное
         <input class="grade-block__input" type="radio" name="grade"> Затрудняюсь ответить
@@ -80,8 +88,8 @@
     </div>
 
     <div class="sight-block">
+      <h2 class="sight-block__label">посещенные достопримечательности:</h2>
       <form class="sight-block__field" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="sight-block__label">посещенные достопримечательности:</label>
         <input class="sight-block__input" type="checkbox" name="sight"> Мост Дьявола
         <input class="sight-block__input" type="checkbox" name="sight"> Гора-Колокол
         <input class="sight-block__input" type="checkbox" name="sight"> Слайд-парк
@@ -90,10 +98,10 @@
     </div>
 
     <div class="review-block">
+      <h2 class="review-block__label">Опишите свои эмоции:</h2>
       <form class="review-block__field" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="review-block__label" for="review">Опишите свои эмоции:</label>
         <textarea class="review-block__input" name="review" id="review" cols="30" rows="10"></textarea>
-        <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <button class="button review-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         <span class="review-block__necessarily"></span>
     </form>
     </div>

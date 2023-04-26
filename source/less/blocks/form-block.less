@@ -4,17 +4,21 @@
   font-size: 18px;
 }
 
+.form-block__title {
+  text-align: center;
+  margin: 0;
+}
+
 .form-block__label {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  margin-left: 15px;
 }
 
 .form-block__input {
-  width: 280px;
-  height: 58px;
   background-color: #f2f2f2;
   border: none;
   font-style: normal;
@@ -22,4 +26,43 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+@media screen and (min-width: 320px) {
+  .form-block__title {
+    margin-bottom: 22px;
+  }
+
+  .form-block {
+    margin: auto auto 64px auto;
+
+  }
+
+  .form-block__field {
+    display: grid;
+    margin-top: 16px;
+  }
+
+  .form-block__input {
+    width: 280px;
+    height: 58px;
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-block__input {
+    width: 295px;
+    height: 58px;
+    padding: 16px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .form-block__input {
+    width: 430px;
+    height: 58px;
+    padding: 16px;
+  }
 }

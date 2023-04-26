@@ -7,6 +7,7 @@
 .review-block__label {
   font-style: normal;
   font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
@@ -25,3 +26,67 @@
   margin-top: 20px;
   margin-bottom: 56px;
 }
+
+@media screen and (min-width: 320px) {
+  .review-block {
+    display: grid;
+    justify-items: center;
+  }
+
+  .review-block__input {
+    width: 279px;
+    height: 150px;
+  }
+
+  .review-block__label {
+    text-align: center;
+  }
+
+  .review-block__field {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .review-block {
+    display: grid;
+    justify-items: center;
+  }
+
+  .review-block__input {
+    width: 648px;
+    height: 160px;
+  }
+
+  .review-block__label {
+    text-align: center;
+  }
+
+  .review-block__field {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .review-block {
+    display: grid;
+    justify-items: center;
+  }
+
+  .review-block__input {
+    width: 768px;
+    height: 160px;
+  }
+
+  .review-block__label {
+    text-align: center;
+  }
+
+  .review-block__field {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

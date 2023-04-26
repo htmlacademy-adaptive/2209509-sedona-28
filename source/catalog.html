@@ -11,12 +11,12 @@
 <body>
   <header class="header">
     <div class="header-block">
-      <img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона">
+      <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
       <div class="header-menu">
         <h2 class="visually-hidden">Меню</h2>
-        <button type="button" class="header-menu__btn visually-hidden" aria-label="открыть меню" aria-expanded="true">
+        <div class="header-menu__btn">
           <span class="header-menu__line"></span>
-        </button>
+        </div>
         <ul class="header-menu__list">
             <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a></li>
             <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
@@ -84,7 +84,7 @@
           </li>
 
           <li class="catalog-block__item">
-            <img class="catalog-block__img" src="img/devil's-bridge.jpg" alt="Мост дьявола">
+            <img class="catalog-block__img" src="img/devils-bridge-catalog.jpg" alt="Мост дьявола">
             <h2 class="catalog-block__subtitle">Мост дьявола</h2>
             <span class="catalog-block__author">Автор фото: Антон</span>
             <button class="catalog-block__like" type="button">
