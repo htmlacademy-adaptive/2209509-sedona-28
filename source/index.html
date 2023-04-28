@@ -10,8 +10,7 @@
   </head>
   <body>
 
-    <header class="header">
-      <div class="header-block">
+    <header class="header-block">
         <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
         <nav class="header-menu">
           <h2 class="visually-hidden">Меню</h2>
@@ -25,27 +24,21 @@
               <li class="header-menu__item"><a href="#" class="header-menu__link">HTML ACADEMY</a></li>
           </ul>
         </nav>
-      </div>
     </header>
     <main class="main">
-    <section class="hero">
+    <section class="hero-block">
       <h2 class="visually-hidden">Седона</h2>
-      <div class="hero-block">
         <img class="hero-block__logo" src="img/sedona-page-logo.svg" alt="Логотип Седона">
-      </div>
     </section>
 
-    <section class="about">
-      <div class="about-block">
+    <section class="about-block">
         <h2 class="visually-hidden">О Седоне</h2>
       <span class="about-block__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий&nbsp;большего!</span>
       <p class="about-block__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </div>
     </section>
 
-    <section class="content">
+    <section class="content-block">
       <h2 class="visually-hidden">Почему вы должны посетить Седону?</h2>
-      <div class="content-block">
         <div class="content-blue">
           <div class="content-blue__info">
           <h2 class="content-blue__title">Настоящий городок</h2>
@@ -54,9 +47,11 @@
         </div>
           <div class="content-blue__hotel">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/hotel-sedona-mobile.jpg">
-            <img class="content-blue__img" src="/img/hotel-sedona-mobile.jpg" alt="Отель в Cедоне">
-          </picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona-hotel-desktop.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/sedona-hotel-tablet.jpg 1x">
+              <source media="(min-width: 320px)" srcset="img/hotel-sedona-mobile.jpg 1x">
+              <img src="img/sedona-hotel-desktop.jpg">
+             </picture>
           </div>
         </div>
         <div class="content-white">
@@ -77,17 +72,19 @@
         </div>
       </div>
         <div class="content-blue">
-          <div class="content-blue__info">
+          <div class="content-blue__info-bridge">
           <h2 class="content-blue__title">Там есть мост дьявола</h2>
           <span class="content-blue__number">— №2 —</span>
           <p class="content-blue__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-          <div class="content-blue__bridge">
-            <picture>
-              <source media="(min-width: 320px)" srcset="/img/devil's-bridge-mobile.jpg">
-            <img class="content-blue__img" src="/img/devil's-bridge-mobile.jpg" alt="Отель в Cедоне">
-          </picture>
-          </div>
+        <div class="content-blue__bridge">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/page-devils-bridge-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/page-devils-bridge-tablet.jpg 1x">
+            <source media="(min-width: 320px)" srcset="img/page-devils-bridge-mobile.jpg 1x">
+            <img src="img/sedona-hotel-desktop.jpg">
+           </picture>
+        </div>
         </div>
         <div class="content-grey">
         <div class="content-grey__block">
@@ -106,16 +103,13 @@
           <p class="content-grey__text">Большинство едет в Гранд каньон и толпится там</p>
         </div>
       </div>
-      </div>
     </section>
 
-    <section class="search">
-      <div class="search-block">
+    <section class="search-block">
         <h2 class="visually-hidden">Найти гостиницу</h2>
         <h2 class="search-block__title">Заинтересовались?</h2>
         <p class="search-block__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button" type="button">Найти гостиницу</button>
-      </div>
     </section>
 
     <section class="map">
@@ -126,29 +120,27 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-block">
-      <h2 class="visually-hidden">Футер</h2>
-      <h2 class="footer__title">#visitSEDONA</h2>
-    <div class="socials">
-      <ul class="socials-list">
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="html-academy">
-      <span class="html-academy__text">
-        Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
-      </span>
-    </div>
+  <footer class="footer-block">
+    <h2 class="visually-hidden">Футер</h2>
+    <h2 class="footer-block__title">#visitSEDONA</h2>
+  <div class="socials">
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a class="socials-list__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
+      </li>
+    </ul>
   </div>
-  </footer>
+  <div class="html-academy">
+    <span class="html-academy__text">
+      Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
+    </span>
+  </div>
+</footer>
   </body>
 </html>

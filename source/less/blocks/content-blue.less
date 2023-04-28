@@ -4,6 +4,7 @@
   color: #ffffff;
   background-color: #81b3d2;
   margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -38,15 +39,11 @@
   .content-blue__bridge {
     display: grid;
     grid-column-end: span 2;
-    background-repeat: no-repeat;
+    order: 1;
   }
 
   .content-blue__title {
-    padding-top: 50px;
-  }
-
-  .content-blue__text {
-    padding: 0 33px;
+    padding-top: 40px;
   }
 }
 
@@ -60,29 +57,21 @@
   .content-blue__hotel {
     display: grid;
     grid-column-end: span 1;
-    background-image: url("../img/sedona-hotel.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
 
   .content-blue__bridge {
     display: grid;
-    grid-column-end: span 1;
-    background-image: url("../img/devil's-bridge.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
+    grid-column: 1/2;
+    margin: 0;
+    padding: 0;
   }
 
-  .content-blue__title {
-    padding-top: 50px;
-  }
-
-  .content-blue__text {
-    padding: 0 33px;
-  }
-
-  .content-blue__img {
-    display: none;
+  .content-blue__info-bridge {
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 1/2;
   }
 }
 
@@ -91,26 +80,25 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     min-height: 256px;
-    padding: 0;
   }
 
   .content-blue__hotel {
     display: grid;
     grid-column-end: span 1;
-    background-image: url("../img/sedona-hotel.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
 
   .content-blue__bridge {
     display: grid;
-    grid-column-end: span 1;
-    background-image: url("../img/devil's-bridge.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
+    grid-column: 1/2;
+    margin: 0;
+    padding: 0;
   }
 
-  .content-blue__img {
-    display: none;
+  .content-blue__info-bridge {
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 1/2;
   }
 }

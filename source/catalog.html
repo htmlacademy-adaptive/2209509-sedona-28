@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header-block">
+  <header class="header-block">
       <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
       <div class="header-menu">
         <h2 class="visually-hidden">Меню</h2>
@@ -24,67 +23,88 @@
             <li class="header-menu__item"><a href="#" class="header-menu__link">HTML ACADEMY</a></li>
         </ul>
       </div>
-    </div>
   </header>
 
   <main class="main">
-    <section class="hero">
+    <section class="hero-block hero-block--inner">
       <h2 class="visually-hidden">Седона</h2>
-      <div class="hero-block">
         <img class="hero-block__logo" src="img/sedona-logo.svg" alt="Логотип Седона">
-      </div>
     </section>
 
-    <section class="about">
-      <div class="about-block">
+    <section class="about-block">
         <h2 class="visually-hidden">Фото и видео</h2>
       <span class="about-block__title">Фото и видео</span>
       <p class="about-block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-    </div>
     </section>
 
-    <section class="catalog">
-      <div class="catalog-block">
+    <section class="catalog-block">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog-block__list">
-          <li class="catalog-block__item">
-            <img class="catalog-block__img" src="img/non-native-spaces.jpg" alt="неродные просторы">
+          <li class="catalog-block__item--first">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desctop.jpg">
+              <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.jpg">
+              <source media="(min-width: 320px)" srcset="img/non-native-spaces-mobile.jpg">
+              <img src="img/non-native-spaces-desctop.jpg">
+             </picture>
+             <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">неродные просторы</h2>
             <span class="catalog-block__author">Автор фото: Борис</span>
             <button class="catalog-block__like" type="button">
-            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
               </svg>
               <span class="catalog-block__like-quantity">1350</span>
             </button>
+          </div>
           </li>
 
           <li class="catalog-block__item">
-            <img class="catalog-block__img" src="img/local-vegetation.jpg" alt="Местная растительность">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/local-vegetation-desctop.jpg">
+              <source media="(min-width: 768px)" srcset="img/local-vegetation-tablet.jpg">
+              <source media="(min-width: 320px)" srcset="img/local-vegetation-mobile.jpg">
+              <img src="img/local-vegetation-desctop.jpg">
+             </picture>
+             <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">Местная растительность</h2>
             <span class="catalog-block__author">Автор фото: Сергей</span>
             <button class="catalog-block__like" type="button">
-            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
               </svg>
               <span class="catalog-block__like-quantity">143</span>
             </button>
+          </div>
           </li>
 
           <li class="catalog-block__item">
-            <img class="catalog-block__img" src="img/Road-to-the-north.jpg" alt="Местная растительность">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/road-to-the-north-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/road-to-the-north-tablet.jpg">
+              <source media="(min-width: 320px)" srcset="img/road-to-the-north-mobile.jpg">
+              <img src="img/local-vegetation-desctop.jpg">
+             </picture>
+             <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">Дорога на север</h2>
             <span class="catalog-block__author">Автор фото: Петр</span>
             <button class="catalog-block__like" type="button">
-            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
               </svg>
               <span class="catalog-block__like-quantity">96</span>
             </button>
+          </div>
           </li>
 
           <li class="catalog-block__item">
-            <img class="catalog-block__img" src="img/devils-bridge-catalog.jpg" alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg">
+              <source media="(min-width: 320px)" srcset="img/devils-bridge-mobile.jpg">
+              <img src="img/devil's-bridge-desktop.jpg">
+             </picture>
+             <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">Мост дьявола</h2>
             <span class="catalog-block__author">Автор фото: Антон</span>
             <button class="catalog-block__like" type="button">
@@ -93,36 +113,37 @@
               </svg>
               <span class="catalog-block__like-quantity">254</span>
             </button>
+          </div>
           </li>
         </ul>
-      </div>
     </section>
 
-    <section class="frame">
-      <div class="frame-block">
+    <section class="frame-block">
         <h2 class="visually-hidden">Видео о Седоне</h2>
         <h2 class="frame-block__title">Все еще сомневаетесь?</h2>
         <p class="frame-block__text">Смотрите&nbsp;видеопрезентацию и скорее за билетами, пока&nbsp;они не подорожали в очередной раз!</p>
 
-        <img class="frame-block__img" src="img/catalog-video.jpg" alt="Видео-презентация">
-      </div>
-    </section>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/catalog-video-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/catalog-video-tablet.jpg">
+          <source media="(min-width: 320px)" srcset="img/catalog-video-mobile.jpg">
+          <img src="img/devil's-bridge-desktop.jpg">
+         </picture>
   </main>
 
-  <footer class="footer">
-    <div class="footer-block">
+  <footer class="footer-block">
       <h2 class="visually-hidden">Футер</h2>
-      <h2 class="footer__title">#visitSEDONA</h2>
+      <h2 class="footer-block__title">#visitSEDONA</h2>
     <div class="socials">
       <ul class="socials-list">
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
         </li>
       </ul>
     </div>
@@ -131,7 +152,6 @@
         Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
       </span>
     </div>
-  </div>
   </footer>
 </body>
 </html>
