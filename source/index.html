@@ -28,29 +28,36 @@
     <main class="main">
     <section class="hero-block">
       <h2 class="visually-hidden">Седона</h2>
-        <img class="hero-block__logo" src="img/sedona-page-logo.svg" alt="Логотип Седона">
+      <div class="hero-block__page-logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-page-logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/sedona-page-logo-tablet.svg">
+        <source media="(min-width: 320px)" srcset="img/sedona-page-logo-mobile.svg">
+        <img src="img/sedona-page-logo-desktop.svg" alt="Добро пожаловать в Седону">
+       </picture>
+      </div>
     </section>
 
-    <section class="about-block">
+    <section class="page-about-block">
         <h2 class="visually-hidden">О Седоне</h2>
-      <span class="about-block__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий&nbsp;большего!</span>
-      <p class="about-block__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <span class="page-about-block__title">СЕДОНА — небольшой городок в Аризоне, <br>заслуживающий&nbsp;большего!</span>
+      <p class="page-about-block__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
     <section class="content-block">
       <h2 class="visually-hidden">Почему вы должны посетить Седону?</h2>
         <div class="content-blue">
           <div class="content-blue__info">
-          <h2 class="content-blue__title">Настоящий городок</h2>
+          <h2 class="content-blue__title">Настоящий <br>городок</h2>
           <span class="content-blue__number">— №1 —</span>
           <p class="content-blue__text">Седона не аттракцион для туристов, там течет своя жизнь!</p>
         </div>
           <div class="content-blue__hotel">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/sedona-hotel-desktop.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/sedona-hotel-tablet.jpg 1x">
-              <source media="(min-width: 320px)" srcset="img/hotel-sedona-mobile.jpg 1x">
-              <img src="img/sedona-hotel-desktop.jpg">
+              <source media="(min-width: 1200px)" srcset="img/sedona-hotel-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/sedona-hotel-tablet.jpg">
+              <source media="(min-width: 320px)" srcset="img/hotel-sedona-mobile.jpg">
+              <img src="img/sedona-hotel-desktop.jpg" srcset="img/sedona-hotel-desktop2x.jpg" alt="Отель в Седоне">
              </picture>
           </div>
         </div>
@@ -79,10 +86,10 @@
         </div>
         <div class="content-blue__bridge">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/page-devils-bridge-desktop.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/page-devils-bridge-tablet.jpg 1x">
-            <source media="(min-width: 320px)" srcset="img/page-devils-bridge-mobile.jpg 1x">
-            <img src="img/sedona-hotel-desktop.jpg">
+            <source media="(min-width: 1200px)" srcset="img/page-devils-bridge-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/page-devils-bridge-tablet.jpg">
+            <source media="(min-width: 320px)" srcset="img/page-devils-bridge-mobile.jpg">
+            <img src="img/page-devils-bridge-desktop.jpg" srcset="img/page-devils-bridge-desktop2x.jpg" alt="Мост Дьявола">
            </picture>
         </div>
         </div>
@@ -121,24 +128,31 @@
   </main>
 
   <footer class="footer-block">
-    <h2 class="visually-hidden">Футер</h2>
     <h2 class="footer-block__title">#visitSEDONA</h2>
   <div class="socials">
     <ul class="socials-list">
       <li class="socials-list__item">
-        <a class="socials-list__link" href="#"><img class="socials__img" src="img/vk.svg" alt="vk"></a>
+        <a class="socials-list__link" href="#"><span class="socials-list__icon"><svg class="socials-list__picture" width="25" height="14" viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.6331 0.948C23.7991 0.402 23.6331 0 22.8381 0H20.2131C19.5451 0 19.2371 0.347 19.0701 0.73C19.0701 0.73 17.7351 3.926 15.8441 6.002C15.2321 6.604 14.9541 6.795 14.6201 6.795C14.4531 6.795 14.2021 6.604 14.2021 6.057V0.948C14.2021 0.292 14.0181 0 13.4621 0H9.33411C8.91711 0 8.66611 0.304 8.66611 0.593C8.66611 1.214 9.61211 1.358 9.70911 3.106V6.904C9.70911 7.737 9.55611 7.888 9.22211 7.888C8.33211 7.888 6.16711 4.677 4.88211 1.003C4.63311 0.288 4.38111 0 3.71011 0H1.08311C0.333105 0 0.183105 0.347 0.183105 0.73C0.183105 1.412 1.07311 4.8 4.32811 9.281C6.49811 12.341 9.55311 14 12.3361 14C14.0051 14 14.2111 13.632 14.2111 12.997V10.684C14.2111 9.947 14.3691 9.8 14.8981 9.8C15.2881 9.8 15.9551 9.992 17.5131 11.467C19.2931 13.216 19.5861 14 20.5881 14H23.2131C23.9631 14 24.3391 13.632 24.1231 12.904C23.8851 12.18 23.0351 11.129 21.9081 9.882C21.2961 9.172 20.3781 8.407 20.0991 8.024C19.7101 7.533 19.8211 7.314 20.0991 6.877C20.0991 6.877 23.2991 2.451 23.6321 0.948H23.6331Z" fill="white"/>
+          </svg></span></a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="#"><img class="socials__img" src="img/telegramm.svg" alt="telegramm"></a>
+        <a class="socials-list__link" href="#"><span class="socials-list__icon"><svg class="socials-list__picture" width="22" height="18" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.6223 1.62225L18.4535 16.566C18.2143 17.6205 17.591 17.883 16.7053 17.3865L11.8768 13.8285L9.54725 16.0695C9.28925 16.3275 9.074 16.5428 8.57675 16.5428L8.924 11.6258L17.8723 3.54C18.2615 3.1935 17.7875 3.00075 17.2678 3.348L6.20525 10.314L1.44275 8.823C0.407004 8.49975 0.388254 7.78725 1.65875 7.29L20.2865 0.113253C21.149 -0.209997 21.9035 0.305253 21.6223 1.623V1.62225Z" fill="white"/>
+          </svg></span></a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="#"><img class="socials__img" src="img/youtube.svg" alt="youtube"></a>
+        <a class="socials-list__link" href="#"><span class="socials-list__icon"><svg class="socials-list__picture" width="21" height="14" viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.3644 0H2.99641C1.48928 0 0.183105 1.3 0.183105 2.8V11.1C0.183105 12.7 1.48928 14 2.99641 14H17.3644C18.972 14 20.1777 12.7 20.1777 11.2V2.8C20.2781 1.3 18.972 0 17.3644 0ZM7.21637 10.4V3.6L14.0487 7L7.21637 10.4Z" fill="white"/>
+          </svg></span></a>
       </li>
     </ul>
   </div>
   <div class="html-academy">
     <span class="html-academy__text">
-      Разработано <img class="html-academy__logo" src="img/html-academy-logo.svg" alt="html academy">
+      Разработано <svg class="html-academy__logo" width="27" height="36" viewBox="0 0 27 36" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" fill="black"/>
+        </svg>
     </span>
   </div>
 </footer>

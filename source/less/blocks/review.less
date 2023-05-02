@@ -27,6 +27,16 @@
   margin-bottom: 56px;
 }
 
+.review-block__necessarily {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 320px) {
   .review-block {
     display: grid;
@@ -71,6 +81,7 @@
 
 @media screen and (min-width: 1280px) {
   .review-block {
+    position: relative;
     display: grid;
     justify-items: center;
   }
@@ -78,15 +89,28 @@
   .review-block__input {
     width: 768px;
     height: 160px;
+    margin-bottom: 50px;
   }
 
   .review-block__label {
     text-align: center;
+    margin-bottom: 7px;
   }
 
   .review-block__field {
     display: flex;
-    flex-direction: column;
+  }
+
+  .review-button {
+    margin-right: 385px;
+    width: 384px;
+    font-size: 21px;
+  }
+
+  .review-block__necessarily {
+    position: absolute;
+    left: 805px;
+    top: 326px;
   }
 }
 

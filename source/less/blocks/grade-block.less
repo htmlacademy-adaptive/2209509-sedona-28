@@ -1,16 +1,24 @@
 .grade-block {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  padding-top: 24px;
+  margin-bottom: 70px;
 }
 
-.grade-block__label {
+.grade-block__title {
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
   font-size: 21px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.grade-block__label {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
+  color: #000000;
 }
 
 .grade-block__input {
@@ -21,32 +29,64 @@
   color: #000000;
 }
 
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + .grade-block__label span {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + .grade-block__label span {
+  background-image: url("../img/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 @media screen and (min-width: 320px) {
-  .grade-block__label {
+  .grade-block__title {
     text-align: center;
   }
 
   .grade-block__field {
-    text-align: center;
+    display: grid;
+    gap: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .grade-block__label {
+  .grade-block__title {
     text-align: center;
   }
 
   .grade-block__field {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: left;
+    margin: 50px 96px 0 96px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .grade-block__label {
+@media screen and (min-width: 1200px) {
+  .grade-block__title {
     text-align: center;
+    margin-top: 6px;
   }
 
   .grade-block__field {
-    text-align: center;
+    display: flex;
+    gap: 66px;
+    justify-content: center;
+    margin: 50px 0 0 0;
   }
 }

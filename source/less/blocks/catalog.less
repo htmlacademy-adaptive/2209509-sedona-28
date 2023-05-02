@@ -37,6 +37,7 @@
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 20px 0 0 0;
 }
 
 .catalog-block__like {
@@ -58,16 +59,21 @@
   }
 
   .catalog-block__like {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     width: 70px;
+    right: 20px;
+    bottom: 27px;
   }
 
   .catalog-block__item--first {
+    position: relative;
     background-color: #f2f2f2;
   }
 
   .catalog-block__item {
+    position: relative;
     background-color: #f2f2f2;
   }
 
@@ -98,7 +104,14 @@
   }
 
   .catalog-block__like {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0);
     color: #ffffff;
+    right: 20px;
+    bottom: 27px;
+  }
+
+  .catalog-block__like-svg {
+    fill: #ffffff;
   }
 }

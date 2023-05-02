@@ -13,8 +13,23 @@
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero-block {
+    background-image: url("../img/sedona-bg2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .hero-block__logo {
-  display: flex;
-  margin: auto;
-  padding-top: 100px;
+  display: grid;
+  justify-items: center;
+  padding-top: 8%;
+}
+
+.hero-block__page-logo {
+  display: grid;
+  justify-items: center;
+  padding-top: 6%;
 }
