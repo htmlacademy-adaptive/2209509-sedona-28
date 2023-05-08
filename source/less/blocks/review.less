@@ -60,8 +60,10 @@
 
 @media screen and (min-width: 768px) {
   .review-block {
+    position: relative;
     display: grid;
     justify-items: center;
+    padding: 0;
   }
 
   .review-block__input {
@@ -71,11 +73,25 @@
 
   .review-block__label {
     text-align: center;
+    margin: 0;
   }
 
   .review-block__field {
     display: flex;
     flex-direction: column;
+  }
+
+  .review-block__necessarily {
+    position: absolute;
+    left: 550px;
+    top: 280px;
+  }
+
+  .review-button {
+    margin-right: 330px;
+    width: 324px;
+    height: 58px;
+    font-size: 21px;
   }
 }
 
@@ -109,8 +125,8 @@
 
   .review-block__necessarily {
     position: absolute;
-    left: 805px;
-    top: 326px;
+    top: 285px;
+    left: 825px;
   }
 }
 

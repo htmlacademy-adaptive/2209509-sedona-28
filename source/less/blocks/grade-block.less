@@ -1,7 +1,7 @@
 .grade-block {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  margin-bottom: 70px;
+  margin-bottom: 58px;
 }
 
 .grade-block__title {
@@ -64,8 +64,15 @@ input[type="radio"]:checked + .grade-block__label span {
 }
 
 @media screen and (min-width: 768px) {
+  .grade-block {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+
   .grade-block__title {
     text-align: center;
+    margin: 0 0 30px 0;
   }
 
   .grade-block__field {
@@ -73,20 +80,22 @@ input[type="radio"]:checked + .grade-block__label span {
     flex-wrap: wrap;
     gap: 16px;
     justify-content: left;
-    margin: 50px 96px 0 96px;
+    width: 575px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .grade-block__title {
     text-align: center;
-    margin-top: 6px;
+    margin-top: 10px;
   }
 
   .grade-block__field {
     display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
     gap: 66px;
     justify-content: center;
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
   }
 }

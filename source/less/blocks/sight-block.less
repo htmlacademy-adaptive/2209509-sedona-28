@@ -63,10 +63,16 @@ input[type="checkbox"]:checked + .sight-block__label span {
 }
 
 @media screen and (min-width: 768px) {
+  .sight-block {
+    display: grid;
+    justify-items: center;
+  }
+
   .sight-block__field {
     display: grid;
-    grid-template-columns: repeat(2, 260px);
-    margin: 62px 144px 0 144px;
+    grid-template-columns: repeat(2, 240px);
+    margin-left: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -79,6 +85,6 @@ input[type="checkbox"]:checked + .sight-block__label span {
     display: flex;
     gap: 67px;
     justify-content: center;
-    margin-top: 62px;
+    margin-top: 42px;
   }
 }
