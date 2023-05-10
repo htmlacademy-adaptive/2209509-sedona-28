@@ -1,4 +1,17 @@
+.frame-block {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 59px 357px;
+}
+
+.catalog-block {
+  display: grid;
+}
+
 .catalog-block__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   list-style: none;
   font-family: "PT Sans", sans-serif;
   padding: 0;
@@ -6,7 +19,16 @@
 }
 
 .catalog-block__item {
-  padding: 20px 24px;
+  display: grid;
+}
+
+.catalog-block__description {
+  padding: 12px 20px;
+}
+
+.catalog-block__item--first {
+  display: grid;
+  grid-column: 1/-1;
 }
 
 .catalog-block__subtitle {
@@ -15,36 +37,85 @@
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 20px 0 0 0;
 }
 
 .catalog-block__like {
-  border: none;
   background-color: #ffffff;
+  border: none;
+  width: 70px;
 }
 
 @media screen and (min-width: 320px) {
-  .frame-block {
-    font-family: "PT Sans", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 32px 18px;
+  .catalog-block__list {
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .frame-block {
-    font-family: "PT Sans", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 47px 124px;
+  .catalog-block__list {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .catalog-block__description {
+    padding: 8px 20px;
+  }
+
+  .catalog-block__like {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 70px;
+    right: 20px;
+    bottom: 27px;
+  }
+
+  .catalog-block__item--first {
+    position: relative;
+    background-color: #f2f2f2;
+  }
+
+  .catalog-block__item {
+    position: relative;
+    background-color: #f2f2f2;
+  }
+
+  .catalog-block__item:nth-child(3) {
+    background-color: #eaeaea;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .frame-block {
-    font-family: "PT Sans", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 59px 357px;
+@media screen and (min-width: 1200px) {
+  .catalog-block__list {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+  }
+
+  .catalog-block__item--first, .catalog-block__item {
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+  }
+
+  .catalog-block__description {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+  }
+
+  .catalog-block__like {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    right: 20px;
+    bottom: 27px;
+  }
+
+  .catalog-block__like-svg {
+    fill: #ffffff;
   }
 }

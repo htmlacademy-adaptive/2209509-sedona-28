@@ -1,0 +1,24 @@
+@media screen and (min-width: 320px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 0 40px 0 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    gap: 20px;
+  }
+}

@@ -1,15 +1,45 @@
 .sight-block {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  padding-top: 24px;
+}
+
+.sight-block__title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .sight-block__label {
   font-style: normal;
   font-weight: 700;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
-  text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + .sight-block__label span {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .sight-block__label span {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sight-block__input {
@@ -18,4 +48,47 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+@media screen and (min-width: 320px) {
+  .sight-block__title {
+    text-align: center;
+  }
+
+  .sight-block__field {
+    display: grid;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sight-block {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 45px;
+  }
+
+  .sight-block__field {
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sight-block {
+    margin-bottom: 90px;
+  }
+
+  .sight-block__title {
+    text-align: center;
+  }
+
+  .sight-block__field {
+    display: flex;
+    gap: 67px;
+    justify-content: center;
+    margin-top: 42px;
+  }
 }

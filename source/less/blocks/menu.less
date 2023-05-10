@@ -1,5 +1,7 @@
 .header-menu__list {
+  position: absolute;
   background-color: #81b3d2;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -19,7 +21,10 @@
 @media screen and (min-width: 320px) {
   .header-menu__list {
     text-align: center;
-    display: none;
+    margin: 0;
+    padding: 0;
+    z-index: 6;
+    visibility: hidden;
   }
 
   .header-menu__item {
@@ -33,10 +38,17 @@
   .header-menu__list {
     background-color: #ffffff;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 768px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 0;
+    z-index: 0;
+    visibility: visible;
+  }
+
+  .header-menu__list::after {
+    content: "";
+    grid-column: 3/4;
+    grid-row: 1/3;
   }
 
   .header-menu__item {
@@ -59,10 +71,17 @@
   .header-menu__list {
     background-color: #ffffff;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 1280px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 0;
+    z-index: 0;
+    visibility: visible;
+  }
+
+  .header-menu__list::after {
+    content: "";
+    grid-column: 3/4;
+    grid-row: 1/3;
   }
 
   .header-menu__item {
@@ -79,5 +98,13 @@
     text-decoration: none;
     color: #000000;
   }
+}
+
+.header-menu__link:current {
+  color: #766357;
+}
+
+.header-menu__link:hover {
+  color: #81b3d2;
 }
 
