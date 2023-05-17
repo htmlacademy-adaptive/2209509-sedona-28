@@ -1,7 +1,5 @@
 .grade-block {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  margin-bottom: 58px;
 }
 
 .grade-block__title {
@@ -51,10 +49,28 @@ input[type="radio"]:checked + .grade-block__label span {
   background-position: center;
 }
 
+input[type="radio"] + .grade-block__label span:hover {
+  background-color: #e5e5e5;
+}
+
+input[type="radio"] + .grade-block__label span:active {
+  background-color: #d5d5d5;
+  background-image: url("../img/circle.svg");
+  opacity: 0.5;
+}
+
 
 @media screen and (min-width: 320px) {
+  .grade-block {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 58px;
+  }
+
   .grade-block__title {
+    font-size: 18px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .grade-block__field {
@@ -67,10 +83,11 @@ input[type="radio"]:checked + .grade-block__label span {
   .grade-block {
     display: grid;
     justify-items: center;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
   }
 
   .grade-block__title {
+    font-size: 21px;
     text-align: center;
     margin: 0 0 30px 0;
   }
@@ -85,9 +102,15 @@ input[type="radio"]:checked + .grade-block__label span {
 }
 
 @media screen and (min-width: 1200px) {
+  .grade-block {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+  }
+
   .grade-block__title {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: 21px;
   }
 
   .grade-block__field {
@@ -96,6 +119,6 @@ input[type="radio"]:checked + .grade-block__label span {
     width: 100%;
     gap: 66px;
     justify-content: center;
-    margin: 10px 0 30px 0;
+    margin: 15px 0 30px 0;
   }
 }

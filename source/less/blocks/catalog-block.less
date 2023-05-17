@@ -1,10 +1,3 @@
-.frame-block {
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 59px 357px;
-}
-
 .catalog-block {
   display: grid;
 }
@@ -13,7 +6,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   list-style: none;
-  font-family: "PT Sans", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -34,10 +26,8 @@
 .catalog-block__subtitle {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 20px 0 0 0;
 }
 
 .catalog-block__like {
@@ -48,7 +38,35 @@
 
 @media screen and (min-width: 320px) {
   .catalog-block__list {
-    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+  }
+
+  .catalog-block__item {
+    margin-bottom: 51px;
+  }
+
+  .catalog-block__item--last {
+    margin-bottom: 0;
+  }
+
+  .catalog-block__subtitle {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .catalog-block__description {
+    padding: 0;
+    width: 178px;
+  }
+
+  .catalog-block__author {
+    font-size: 14px;
+  }
+
+  .catalog-block__like {
+    margin-top: 10px;
+    padding: 0;
   }
 }
 
@@ -59,7 +77,9 @@
   }
 
   .catalog-block__description {
-    padding: 8px 20px;
+    padding: 6px 20px 16px 20px;
+    font-size: 14px;
+    width: 100%;
   }
 
   .catalog-block__like {
@@ -69,20 +89,31 @@
     width: 70px;
     right: 20px;
     bottom: 27px;
+    margin: 0;
   }
 
   .catalog-block__item--first {
     position: relative;
+    padding: 0;
+    margin: 0;
     background-color: #f2f2f2;
   }
 
   .catalog-block__item {
     position: relative;
+    padding: 0;
+    margin: 0;
     background-color: #f2f2f2;
   }
 
   .catalog-block__item:nth-child(3) {
     background-color: #eaeaea;
+  }
+
+  .catalog-block__subtitle {
+    margin-bottom: 6px;
+    font-size: 16px;
+    letter-spacing: -1px;
   }
 }
 
@@ -93,9 +124,17 @@
     width: 1200px;
   }
 
-  .catalog-block__item--first, .catalog-block__item {
+  .catalog-block__item--first {
     position: relative;
     padding: 0;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  .catalog-block__item {
+    position: relative;
+    padding: 0;
+    margin: 0;
     color: #ffffff;
   }
 
@@ -113,6 +152,7 @@
     color: #ffffff;
     right: 20px;
     bottom: 27px;
+    margin: 0;
   }
 
   .catalog-block__like-svg {

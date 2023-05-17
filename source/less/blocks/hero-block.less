@@ -7,16 +7,11 @@
   background-color: #e5f2fa;
   margin: 0;
   min-height: 518px;
-
-  &--inner {
-    min-height: 300px;
-  }
 }
 
 .hero-block__logo {
   display: grid;
   justify-items: center;
-  padding-top: 8%;
 }
 
 .hero-block__page-logo {
@@ -26,49 +21,76 @@
 
 @media screen and (min-width: 320px) {
   .hero-block {
-    margin-top: 56px;
-    clip-path: polygon(50% 0%, 88% 0, 100% 0, 100% 93%, 49% 99%, 0 94%, 0 0);
+    margin-top: 53px;
+    min-height: 450px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 84%, 50% 100%, 0 83%, 0 0);
+
+    &--inner {
+      min-height: 159px;
+    }
+  }
+
+  .hero-block__logo-img {
+    margin-top: 50px;
+  }
+
+  .hero-block__page-logo {
+    margin-top: 90px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-block {
+    min-height: 520px;
     clip-path: polygon(0 92%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 36%, 100% 93%, 96% 93%, 96% 88%, 50% 100%, 4% 88%, 4% 93%);
+
+    &--inner {
+      min-height: 290px;
+      clip-path: polygon(0 87%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 88%, 96% 88%, 96% 81%, 50% 100%, 4% 81%, 4% 88%);
+    }
   }
 
   .hero-block__logo-img {
     width: 456px;
-    height: 77px;
-    margin-top: 30px;
+    height: auto;
+    margin-top: 90px;
   }
 
   .hero-block__page-logo-img {
-    width: 500px;
-    height: 350px;
+    width: 450px;
+    height: auto;
   }
 
   .hero-block__page-logo {
-    padding-top: 10%;
+    margin-top: 83px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-block {
+    margin-top: 55px;
+    min-height: 518px;
     clip-path: polygon(0 88%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 28%, 100% 89%, 79% 94%, 79% 89%, 50% 100%, 21% 88%, 21% 93%);
+
+    &--inner {
+      clip-path: polygon(0 81%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 24%, 100% 80%, 79% 88%, 79% 81%, 50% 100%, 21% 80%, 21% 88%);
+      min-height: 300px;
+    }
   }
 
   .hero-block__logo-img {
-    width: 520px;
-    height: 78px;
+    width: 450px;
+    height: auto;
     margin: 0;
+    margin-top: 100px;
   }
 
   .hero-block__page-logo-img {
-    width: 500px;
-    height: 350px;
+    width: 460px;
+    height: auto;
   }
 
   .hero-block__page-logo {
-    padding-top: 6%;
+    margin-top: 80px;
   }
 }

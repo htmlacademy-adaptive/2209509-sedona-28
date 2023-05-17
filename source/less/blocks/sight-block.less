@@ -1,10 +1,8 @@
 .sight-block {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
 }
 
 .sight-block__title {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -42,6 +40,18 @@ input[type="checkbox"]:checked + .sight-block__label span {
   background-position: center;
 }
 
+input[type="checkbox"] + .sight-block__label span:hover {
+  background-color: #e5e5e5;
+}
+
+input[type="checkbox"] + .sight-block__label span:active {
+  background-color: #d5d5d5;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
 .sight-block__input {
   font-style: normal;
   font-weight: 700;
@@ -53,11 +63,12 @@ input[type="checkbox"]:checked + .sight-block__label span {
 @media screen and (min-width: 320px) {
   .sight-block__title {
     text-align: center;
+    font-size: 18px;
   }
 
   .sight-block__field {
     display: grid;
-    gap: 16px;
+    grid-gap: 20px;
   }
 }
 
@@ -65,7 +76,11 @@ input[type="checkbox"]:checked + .sight-block__label span {
   .sight-block {
     display: grid;
     justify-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
+  }
+
+  .sight-block__title {
+    font-size: 21px;
   }
 
   .sight-block__field {
@@ -78,17 +93,18 @@ input[type="checkbox"]:checked + .sight-block__label span {
 
 @media screen and (min-width: 1280px) {
   .sight-block {
-    margin-bottom: 90px;
+    margin-bottom: 88px;
   }
 
   .sight-block__title {
     text-align: center;
+    font-size: 21px;
   }
 
   .sight-block__field {
     display: flex;
     gap: 67px;
     justify-content: center;
-    margin-top: 42px;
+    margin: 42px 0 0 0;
   }
 }

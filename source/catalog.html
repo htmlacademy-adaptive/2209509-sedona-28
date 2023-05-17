@@ -5,18 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
-  <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+  <link rel="icon" href="public/favicon.ico" sizes="32x32" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header-block">
       <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
       <div class="header-menu">
-        <h2 class="visually-hidden">Меню</h2>
         <div class="header-menu__btn">
           <span class="header-menu__line"></span>
         </div>
-        <ul class="header-menu__list">
+        <ul class="header-menu__list header-menu__list--hidden"> <!-- header-menu__list--hidden -->
             <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a></li>
             <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
             <li class="header-menu__item"><a href="form.html" class="header-menu__link">Форма Отзыва</a></li>
@@ -35,19 +34,29 @@
 
     <section class="catalog-about-block">
       <span class="catalog-about-block__title">Фото и видео</span>
-      <p class="catalog-about-block__text">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
+      <p class="catalog-about-block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </section>
 
     <section class="catalog-block">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog-block__list">
           <li class="catalog-block__item catalog-block__item--first">
+            <a class="catalog-block__link" href="#" alt="Подробнее">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desctop@2x.jpg, img/non-native-spaces-desctop.webp, img/non-native-spaces-desctop@2x.webp, img/non-native-spaces-desctop.avif, img/non-native-spaces-desctop@2x.avif">
-              <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet@2x.jpg, img/non-native-spaces-tablet.webp, img/non-native-spaces-tablet@2x.webp, img/non-native-spaces-tablet.avif, img/non-native-spaces-tablet@2x.avif">
-              <source media="(min-width: 320px)" srcset="img/non-native-spaces-mobile@2x.jpg, img/non-native-spaces-mobile.webp, img/non-native-spaces-mobile@2x.webp, img/non-native-spaces-mobile.avif, img/non-native-spaces-mobile@2x.avif">
-              <img src="img/non-native-spaces-desctop.jpg" alt="Неродные просторы">
+            <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desctop@2x.jpg">
+            <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desctop.avif, img/non-native-spaces-desctop@2x.avif">
+            <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desctop.webp, img/non-native-spaces-desctop@2x.webp">
+
+            <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.avif, img/non-native-spaces-tablet@2x.avif">
+            <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.webp, img/non-native-spaces-tablet@2x.webp">
+
+            <source media="(min-width: 320px)" srcset="img/non-native-spaces-mobile@2x.jpg">
+            <source media="(min-width: 320px)" srcset="img/non-native-spaces-mobile.avif, img/non-native-spaces-mobile@2x.avif">
+            <source media="(min-width: 320px)" srcset="img/non-native-spaces-mobile.webp, img/non-native-spaces-mobile@2x.webp">
+            <img src="img/non-native-spaces-mobile.jpg" alt="Неродные просторы">
              </picture>
+            </a>
              <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">неродные просторы</h2>
             <span class="catalog-block__author">Автор фото: Борис</span>
@@ -61,12 +70,22 @@
           </li>
 
           <li class="catalog-block__item">
+            <a class="catalog-block__link" href="#" alt="Подробнее">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/local-vegetation-desctop@2x.jpg, img/local-vegetation-desctop.webp, img/local-vegetation-desctop@2x.webp, img/local-vegetation-desctop.avif, img/local-vegetation-desctop@2x.avif">
-              <source media="(min-width: 768px)" srcset="img/local-vegetation-tablet@2x.jpg, img/local-vegetation-tablet.webp, img/local-vegetation-tablet@2x.webp, img/local-vegetation-tablet.avif, img/local-vegetation-tablet@2x.avif">
-              <source media="(min-width: 320px)" srcset="img/local-vegetation-mobile@2x.jpg, img/local-vegetation-mobile.webp, img/local-vegetation-mobile@2x.webp, img/local-vegetation-mobile.avif, img/local-vegetation-mobile@2x.avif">
-              <img src="img/local-vegetation-desctop.jpg" alt="Местная растительность">
+             <source media="(min-width: 1200px)" srcset="img/local-vegetation-desctop@2x.jpg">
+              <source media="(min-width: 1200px)" srcset="img/local-vegetation-desctop.avif, img/local-vegetation-desctop@2x.avif">
+              <source media="(min-width: 1200px)" srcset="img/local-vegetation-desctop.webp, img/local-vegetation-desctop@2x.webp">
+
+              <source media="(min-width: 768px)" srcset="img/local-vegetation-tablet@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/local-vegetation-tablet.avif, img/local-vegetation-tablet@2x.avif">
+              <source media="(min-width: 768px)" srcset="img/local-vegetation-tablet.webp, img/local-vegetation-tablet@2x.webp">
+
+              <source media="(min-width: 320px)" srcset="img/local-vegetation-mobile@2x.jpg">
+              <source media="(min-width: 320px)" srcset="img/local-vegetation-mobile.avif, img/local-vegetation-mobile@2x.avif">
+              <source media="(min-width: 320px)" srcset="img/local-vegetation-mobile.webp, img/local-vegetation-mobile@2x.webp">
+              <img src="img/local-vegetation-mobile.jpg" alt="Местная растительность">
              </picture>
+            </a>
              <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">Местная растительность</h2>
             <span class="catalog-block__author">Автор фото: Сергей</span>
@@ -80,12 +99,22 @@
           </li>
 
           <li class="catalog-block__item">
+            <a class="catalog-block__link" href="#" alt="Подробнее">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/road-to-the-north-desktop@2x.jpg, img/road-to-the-north-desktop.webp, img/road-to-the-north-desktop@2x.webp, img/road-to-the-north-desktop.avif, img/road-to-the-north-desktop@2x.avif">
-              <source media="(min-width: 768px)" srcset="img/road-to-the-north-tablet@2x.jpg, img/road-to-the-north-tablet.webp, img/road-to-the-north-tablet@2x.webp, img/road-to-the-north-tablet.avif, img/road-to-the-north-tablet@2x.avif">
-              <source media="(min-width: 320px)" srcset="img/road-to-the-north-mobile@2x.jpg, img/road-to-the-north-mobile.webp, img/road-to-the-north-mobile@2x.webp, img/road-to-the-north-mobile.avif, img/road-to-the-north-mobile@2x.avif">
-              <img src="img/local-vegetation-desctop.jpg" alt="Дорога на север">
+              <source media="(min-width: 1200px)" srcset="img/road-to-the-north-desktop@2x.jpg">
+              <source media="(min-width: 1200px)" srcset="img/road-to-the-north-desktop.avif, img/road-to-the-north-desktop@2x.avif">
+              <source media="(min-width: 1200px)" srcset="img/road-to-the-north-desktop.webp, img/road-to-the-north-desktop@2x.webp">
+
+              <source media="(min-width: 768px)" srcset="img/road-to-the-north-tablet@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/road-to-the-north-tablet.avif, img/road-to-the-north-tablet@2x.avif">
+              <source media="(min-width: 768px)" srcset="img/road-to-the-north-tablet.webp, img/road-to-the-north-tablet@2x.webp">
+
+              <source media="(min-width: 320px)" srcset="img/road-to-the-north-mobile@2x.jpg">
+              <source media="(min-width: 320px)" srcset="img/road-to-the-north-mobile.avif, img/road-to-the-north-mobile@2x.avif">
+              <source media="(min-width: 320px)" srcset="img/road-to-the-north-mobile.webp, img/road-to-the-north-mobile@2x.webp">
+              <img src="img/road-to-the-north-mobile.jpg" alt="Дорога на север">
              </picture>
+            </a>
              <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">Дорога на север</h2>
             <span class="catalog-block__author">Автор фото: Петр</span>
@@ -98,13 +127,23 @@
           </div>
           </li>
 
-          <li class="catalog-block__item">
+          <li class="catalog-block__item catalog-block__item--last">
+            <a class="catalog-block__link" href="#" alt="Подробнее">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop@2x.jpg, img/devils-bridge-desktop.webp, img/devils-bridge-desktop@2x.webp, img/devils-bridge-desktop.avif, img/devils-bridge-desktop@2x.avif">
-              <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet@2x.jpg, img/devils-bridge-tablet.webp, img/devils-bridge-tablet@2x.webp, img/devils-bridge-tablet.avif, img/devils-bridge-tablet@2x.avif">
-              <source media="(min-width: 320px)" srcset="img/devils-bridge-mobile@2x.jpg img/devils-bridge-mobile.webp, img/devils-bridge-mobile@2x.webp, img/devils-bridge-mobile.avif, img/devils-bridge-mobile@2x.avif">
-              <img src="img/devil's-bridge-desktop.jpg" alt="Мост Дьявола">
+              <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop@2x.jpg">
+              <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.avif, img/devils-bridge-desktop@2x.avif">
+              <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.webp, img/devils-bridge-desktop@2x.webp">
+
+              <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.avif, img/devils-bridge-tablet@2x.avif">
+              <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.webp, img/devils-bridge-tablet@2x.webp">
+
+              <source media="(min-width: 320px)" srcset="img/devils-bridge-mobile@2x.jpg">
+              <source media="(min-width: 320px)" srcset="img/devils-bridge-mobile.avif, img/devils-bridge-mobile@2x.avif">
+              <source media="(min-width: 320px)" srcset="img/devils-bridge-mobile.webp, img/devils-bridge-mobile@2x.webp">
+              <img src="img/devils-bridge-mobile.jpg" alt="Дорога на север">
              </picture>
+            </a>
              <div class="catalog-block__description">
             <h2 class="catalog-block__subtitle">Мост дьявола</h2>
             <span class="catalog-block__author">Автор фото: Антон</span>
@@ -122,7 +161,7 @@
     <section class="frame-block">
         <h2 class="visually-hidden">Видео о Седоне</h2>
         <h2 class="frame-block__title">Все еще сомневаетесь?</h2>
-        <p class="frame-block__text">Смотрите&nbsp;видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
+        <p class="frame-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <a href="#" class="frame-block__link">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/catalog-video-desktop@2x.jpg, img/catalog-video-desktop.webp, img/catalog-video-desktop@2x.webp, img/catalog-video-desktop.avif, img/catalog-video-desktop@2x.avif">
@@ -140,25 +179,33 @@
     <ul class="socials-list">
       <li class="socials-list__item">
         <a class="socials-list__link" href="#"><span class="socials-list__icon"><svg class="socials-list__picture" width="25" height="14" viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.6331 0.948C23.7991 0.402 23.6331 0 22.8381 0H20.2131C19.5451 0 19.2371 0.347 19.0701 0.73C19.0701 0.73 17.7351 3.926 15.8441 6.002C15.2321 6.604 14.9541 6.795 14.6201 6.795C14.4531 6.795 14.2021 6.604 14.2021 6.057V0.948C14.2021 0.292 14.0181 0 13.4621 0H9.33411C8.91711 0 8.66611 0.304 8.66611 0.593C8.66611 1.214 9.61211 1.358 9.70911 3.106V6.904C9.70911 7.737 9.55611 7.888 9.22211 7.888C8.33211 7.888 6.16711 4.677 4.88211 1.003C4.63311 0.288 4.38111 0 3.71011 0H1.08311C0.333105 0 0.183105 0.347 0.183105 0.73C0.183105 1.412 1.07311 4.8 4.32811 9.281C6.49811 12.341 9.55311 14 12.3361 14C14.0051 14 14.2111 13.632 14.2111 12.997V10.684C14.2111 9.947 14.3691 9.8 14.8981 9.8C15.2881 9.8 15.9551 9.992 17.5131 11.467C19.2931 13.216 19.5861 14 20.5881 14H23.2131C23.9631 14 24.3391 13.632 24.1231 12.904C23.8851 12.18 23.0351 11.129 21.9081 9.882C21.2961 9.172 20.3781 8.407 20.0991 8.024C19.7101 7.533 19.8211 7.314 20.0991 6.877C20.0991 6.877 23.2991 2.451 23.6321 0.948H23.6331Z" fill="white"/>
+          <path class="socials-list__img" d="M23.6331 0.948C23.7991 0.402 23.6331 0 22.8381 0H20.2131C19.5451 0 19.2371 0.347 19.0701 0.73C19.0701 0.73 17.7351 3.926 15.8441 6.002C15.2321 6.604 14.9541 6.795 14.6201 6.795C14.4531 6.795 14.2021 6.604 14.2021 6.057V0.948C14.2021 0.292 14.0181 0 13.4621 0H9.33411C8.91711 0 8.66611 0.304 8.66611 0.593C8.66611 1.214 9.61211 1.358 9.70911 3.106V6.904C9.70911 7.737 9.55611 7.888 9.22211 7.888C8.33211 7.888 6.16711 4.677 4.88211 1.003C4.63311 0.288 4.38111 0 3.71011 0H1.08311C0.333105 0 0.183105 0.347 0.183105 0.73C0.183105 1.412 1.07311 4.8 4.32811 9.281C6.49811 12.341 9.55311 14 12.3361 14C14.0051 14 14.2111 13.632 14.2111 12.997V10.684C14.2111 9.947 14.3691 9.8 14.8981 9.8C15.2881 9.8 15.9551 9.992 17.5131 11.467C19.2931 13.216 19.5861 14 20.5881 14H23.2131C23.9631 14 24.3391 13.632 24.1231 12.904C23.8851 12.18 23.0351 11.129 21.9081 9.882C21.2961 9.172 20.3781 8.407 20.0991 8.024C19.7101 7.533 19.8211 7.314 20.0991 6.877C20.0991 6.877 23.2991 2.451 23.6321 0.948H23.6331Z"/>
           </svg></span></a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link" href="#"><span class="socials-list__icon"><svg class="socials-list__picture" width="22" height="18" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21.6223 1.62225L18.4535 16.566C18.2143 17.6205 17.591 17.883 16.7053 17.3865L11.8768 13.8285L9.54725 16.0695C9.28925 16.3275 9.074 16.5428 8.57675 16.5428L8.924 11.6258L17.8723 3.54C18.2615 3.1935 17.7875 3.00075 17.2678 3.348L6.20525 10.314L1.44275 8.823C0.407004 8.49975 0.388254 7.78725 1.65875 7.29L20.2865 0.113253C21.149 -0.209997 21.9035 0.305253 21.6223 1.623V1.62225Z" fill="white"/>
+          <path class="socials-list__img" d="M21.6223 1.62225L18.4535 16.566C18.2143 17.6205 17.591 17.883 16.7053 17.3865L11.8768 13.8285L9.54725 16.0695C9.28925 16.3275 9.074 16.5428 8.57675 16.5428L8.924 11.6258L17.8723 3.54C18.2615 3.1935 17.7875 3.00075 17.2678 3.348L6.20525 10.314L1.44275 8.823C0.407004 8.49975 0.388254 7.78725 1.65875 7.29L20.2865 0.113253C21.149 -0.209997 21.9035 0.305253 21.6223 1.623V1.62225Z"/>
           </svg></span></a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link" href="#"><span class="socials-list__icon"><svg class="socials-list__picture" width="21" height="14" viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.3644 0H2.99641C1.48928 0 0.183105 1.3 0.183105 2.8V11.1C0.183105 12.7 1.48928 14 2.99641 14H17.3644C18.972 14 20.1777 12.7 20.1777 11.2V2.8C20.2781 1.3 18.972 0 17.3644 0ZM7.21637 10.4V3.6L14.0487 7L7.21637 10.4Z" fill="white"/>
+          <path class="socials-list__img" d="M17.3644 0H2.99641C1.48928 0 0.183105 1.3 0.183105 2.8V11.1C0.183105 12.7 1.48928 14 2.99641 14H17.3644C18.972 14 20.1777 12.7 20.1777 11.2V2.8C20.2781 1.3 18.972 0 17.3644 0ZM7.21637 10.4V3.6L14.0487 7L7.21637 10.4Z"/>
           </svg></span></a>
       </li>
     </ul>
   </div>
   <div class="html-academy">
     <span class="html-academy__text">
-      Разработано <svg class="html-academy__logo" width="27" height="36" viewBox="0 0 27 36" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" fill="black"/>
+      <svg width="130" height="36" viewBox="0 0 130 36" xmlns="http://www.w3.org/2000/svg">
+        <path class="html-academy__logo" d="M1.98883 13.798C2.34349 13.714 2.72616 13.658 3.13683 13.63C3.54749 13.602 3.95349 13.588 4.35483 13.588C4.78416 13.588 5.21816 13.63 5.65683 13.714C6.10483 13.798 6.51083 13.952 6.87483 14.176C7.23883 14.4 7.53283 14.708 7.75683 15.1C7.99016 15.492 8.10683 15.9913 8.10683 16.598C8.10683 17.1953 7.99949 17.6993 7.78483 18.11C7.57016 18.5207 7.2855 18.8567 6.93083 19.118C6.57616 19.37 6.17016 19.552 5.71283 19.664C5.25549 19.776 4.78416 19.832 4.29883 19.832C4.25216 19.832 4.17283 19.832 4.06083 19.832C3.95816 19.832 3.84616 19.832 3.72483 19.832C3.61283 19.8227 3.50083 19.8133 3.38883 19.804C3.27683 19.7947 3.19749 19.7853 3.15083 19.776V23.5H1.98883V13.798ZM4.38283 14.596C4.14016 14.596 3.90683 14.6007 3.68283 14.61C3.45883 14.6193 3.28149 14.6427 3.15083 14.68V18.74C3.19749 18.7587 3.27216 18.7727 3.37483 18.782C3.47749 18.782 3.58483 18.7867 3.69683 18.796C3.80883 18.796 3.91616 18.796 4.01883 18.796C4.12149 18.796 4.19616 18.796 4.24283 18.796C4.56016 18.796 4.87283 18.768 5.18083 18.712C5.49816 18.6467 5.78283 18.5347 6.03483 18.376C6.28683 18.2173 6.4875 17.9933 6.63683 17.704C6.7955 17.4147 6.87483 17.046 6.87483 16.598C6.87483 16.2153 6.80016 15.898 6.65083 15.646C6.51083 15.3847 6.3195 15.1793 6.07683 15.03C5.8435 14.8713 5.5775 14.7593 5.27883 14.694C4.98016 14.6287 4.6815 14.596 4.38283 14.596ZM13.5825 20.784H9.97047L8.99047 23.5H7.84247L11.5525 13.546H12.0845L15.8085 23.5H14.5905L13.5825 20.784ZM10.3485 19.776H13.2325L12.1405 16.794L11.7905 15.31H11.7765L11.4265 16.822L10.3485 19.776ZM17.8659 18.866V17.886H18.0899C18.1739 17.886 18.2766 17.886 18.3979 17.886C18.5193 17.886 18.6406 17.8813 18.7619 17.872C18.8926 17.8627 19.0139 17.858 19.1259 17.858C19.2473 17.8487 19.3453 17.8347 19.4199 17.816C19.6626 17.7787 19.8913 17.718 20.1059 17.634C20.3206 17.5407 20.5073 17.424 20.6659 17.284C20.8246 17.144 20.9506 16.9807 21.0439 16.794C21.1373 16.6073 21.1839 16.402 21.1839 16.178C21.1839 15.87 21.1326 15.6133 21.0299 15.408C20.9273 15.2027 20.7826 15.0393 20.5959 14.918C20.4186 14.7873 20.2086 14.6987 19.9659 14.652C19.7326 14.596 19.4806 14.568 19.2099 14.568C18.7059 14.568 18.2766 14.6053 17.9219 14.68C17.5673 14.7453 17.2826 14.8293 17.0679 14.932L16.7599 14.008C16.9466 13.9053 17.2826 13.8027 17.7679 13.7C18.2533 13.588 18.7993 13.532 19.4059 13.532C19.7793 13.532 20.1433 13.574 20.4979 13.658C20.8619 13.7327 21.1839 13.8633 21.4639 14.05C21.7533 14.2273 21.9819 14.4747 22.1499 14.792C22.3273 15.1 22.4159 15.4827 22.4159 15.94C22.4159 16.4067 22.2619 16.8547 21.9539 17.284C21.6459 17.704 21.1839 18.0073 20.5679 18.194V18.25C21.2306 18.3433 21.7533 18.5907 22.1359 18.992C22.5186 19.3933 22.7099 19.93 22.7099 20.602C22.7099 21.134 22.6026 21.596 22.3879 21.988C22.1826 22.3707 21.9073 22.688 21.5619 22.94C21.2259 23.192 20.8339 23.3787 20.3859 23.5C19.9473 23.612 19.4993 23.668 19.0419 23.668C18.4259 23.668 17.9173 23.6307 17.5159 23.556C17.1239 23.4907 16.7973 23.4067 16.5359 23.304L16.8299 22.254C17.0446 22.3567 17.3433 22.4453 17.7259 22.52C18.1179 22.5947 18.5893 22.632 19.1399 22.632C19.4293 22.632 19.7139 22.5947 19.9939 22.52C20.2739 22.436 20.5213 22.3147 20.7359 22.156C20.9599 21.988 21.1373 21.7827 21.2679 21.54C21.4079 21.2973 21.4779 21.008 21.4779 20.672C21.4779 20.084 21.2726 19.6547 20.8619 19.384C20.4513 19.104 19.9146 18.9407 19.2519 18.894C19.1399 18.8847 19.0326 18.88 18.9299 18.88C18.8366 18.8707 18.7386 18.866 18.6359 18.866H17.8659ZM24.6841 13.798C25.0388 13.714 25.4215 13.658 25.8321 13.63C26.2428 13.602 26.6488 13.588 27.0501 13.588C27.4795 13.588 27.9135 13.63 28.3521 13.714C28.8001 13.798 29.2061 13.952 29.5701 14.176C29.9341 14.4 30.2281 14.708 30.4521 15.1C30.6855 15.492 30.8021 15.9913 30.8021 16.598C30.8021 17.1953 30.6948 17.6993 30.4801 18.11C30.2655 18.5207 29.9808 18.8567 29.6261 19.118C29.2715 19.37 28.8655 19.552 28.4081 19.664C27.9508 19.776 27.4795 19.832 26.9941 19.832C26.9475 19.832 26.8681 19.832 26.7561 19.832C26.6535 19.832 26.5415 19.832 26.4201 19.832C26.3081 19.8227 26.1961 19.8133 26.0841 19.804C25.9721 19.7947 25.8928 19.7853 25.8461 19.776V23.5H24.6841V13.798ZM27.0781 14.596C26.8355 14.596 26.6021 14.6007 26.3781 14.61C26.1541 14.6193 25.9768 14.6427 25.8461 14.68V18.74C25.8928 18.7587 25.9675 18.7727 26.0701 18.782C26.1728 18.782 26.2801 18.7867 26.3921 18.796C26.5041 18.796 26.6115 18.796 26.7141 18.796C26.8168 18.796 26.8915 18.796 26.9381 18.796C27.2555 18.796 27.5681 18.768 27.8761 18.712C28.1935 18.6467 28.4781 18.5347 28.7301 18.376C28.9821 18.2173 29.1828 17.9933 29.3321 17.704C29.4908 17.4147 29.5701 17.046 29.5701 16.598C29.5701 16.2153 29.4955 15.898 29.3461 15.646C29.2061 15.3847 29.0148 15.1793 28.7721 15.03C28.5388 14.8713 28.2728 14.7593 27.9741 14.694C27.6755 14.6287 27.3768 14.596 27.0781 14.596ZM36.2778 20.784H32.6658L31.6858 23.5H30.5378L34.2478 13.546H34.7798L38.5038 23.5H37.2858L36.2778 20.784ZM33.0438 19.776H35.9278L34.8358 16.794L34.4858 15.31H34.4718L34.1218 16.822L33.0438 19.776ZM39.8052 13.7H45.1252V14.736H40.9672V17.676C41.1259 17.648 41.3219 17.62 41.5552 17.592C41.7886 17.564 42.0126 17.55 42.2272 17.55C42.7032 17.55 43.1559 17.5967 43.5852 17.69C44.0146 17.774 44.3926 17.9233 44.7192 18.138C45.0459 18.3527 45.3026 18.6467 45.4892 19.02C45.6852 19.384 45.7832 19.846 45.7832 20.406C45.7832 20.966 45.6852 21.4513 45.4892 21.862C45.2932 22.2633 45.0319 22.5947 44.7052 22.856C44.3786 23.108 43.9959 23.2993 43.5572 23.43C43.1279 23.5513 42.6752 23.612 42.1992 23.612C42.0406 23.612 41.8586 23.6073 41.6532 23.598C41.4572 23.598 41.2472 23.5887 41.0232 23.57C40.8086 23.5513 40.5939 23.528 40.3792 23.5C40.1739 23.4813 39.9826 23.4487 39.8052 23.402V13.7ZM42.3392 22.604C42.6379 22.604 42.9226 22.562 43.1932 22.478C43.4639 22.394 43.6972 22.2727 43.8932 22.114C44.0986 21.946 44.2572 21.736 44.3692 21.484C44.4906 21.232 44.5512 20.938 44.5512 20.602C44.5512 20.1727 44.4812 19.8273 44.3412 19.566C44.2106 19.2953 44.0332 19.0853 43.8092 18.936C43.5852 18.7867 43.3239 18.6887 43.0252 18.642C42.7359 18.586 42.4326 18.558 42.1152 18.558C42.0312 18.558 41.9332 18.5627 41.8212 18.572C41.7092 18.5813 41.5972 18.5907 41.4852 18.6C41.3732 18.6093 41.2706 18.6233 41.1772 18.642C41.0839 18.6513 41.0139 18.6607 40.9672 18.67V22.52C41.0326 22.5387 41.1166 22.5527 41.2192 22.562C41.3312 22.5713 41.4479 22.5807 41.5692 22.59C41.6999 22.5993 41.8306 22.604 41.9612 22.604C42.0919 22.604 42.2179 22.604 42.3392 22.604ZM47.0965 18.6C47.0965 16.9667 47.4418 15.716 48.1325 14.848C48.8232 13.9707 49.8078 13.532 51.0865 13.532C51.7772 13.532 52.3745 13.6533 52.8785 13.896C53.3825 14.1387 53.7978 14.484 54.1245 14.932C54.4605 15.3707 54.7078 15.9027 54.8665 16.528C55.0252 17.144 55.1045 17.8347 55.1045 18.6C55.1045 20.2333 54.7545 21.4887 54.0545 22.366C53.3638 23.234 52.3745 23.668 51.0865 23.668C50.4052 23.668 49.8125 23.5467 49.3085 23.304C48.8138 23.0613 48.3985 22.7207 48.0625 22.282C47.7358 21.834 47.4932 21.302 47.3345 20.686C47.1758 20.0607 47.0965 19.3653 47.0965 18.6ZM48.3285 18.6C48.3285 19.1413 48.3798 19.6547 48.4825 20.14C48.5945 20.6253 48.7625 21.0547 48.9865 21.428C49.2105 21.792 49.4952 22.086 49.8405 22.31C50.1952 22.5247 50.6105 22.632 51.0865 22.632C51.9545 22.632 52.6358 22.3053 53.1305 21.652C53.6252 20.9893 53.8725 19.972 53.8725 18.6C53.8725 18.068 53.8165 17.5593 53.7045 17.074C53.6018 16.5793 53.4338 16.15 53.2005 15.786C52.9765 15.4127 52.6872 15.1187 52.3325 14.904C51.9872 14.68 51.5718 14.568 51.0865 14.568C50.2278 14.568 49.5512 14.8993 49.0565 15.562C48.5712 16.2153 48.3285 17.228 48.3285 18.6ZM62.7309 14.736H59.6789V23.5H58.5169V14.736H55.4649V13.7H62.7309V14.736ZM67.8872 20.784H64.2752L63.2952 23.5H62.1472L65.8572 13.546H66.3892L70.1132 23.5H68.8952L67.8872 20.784ZM64.6532 19.776H67.5372L66.4452 16.794L66.0952 15.31H66.0812L65.7312 16.822L64.6532 19.776ZM77.2806 19.006H72.5766V23.5H71.4146V13.7H72.5766V17.97H77.2806V13.7H78.4426V23.5H77.2806V19.006ZM80.4149 18.6C80.4149 16.9667 80.7602 15.716 81.4509 14.848C82.1415 13.9707 83.1262 13.532 84.4049 13.532C85.0955 13.532 85.6929 13.6533 86.1969 13.896C86.7009 14.1387 87.1162 14.484 87.4429 14.932C87.7789 15.3707 88.0262 15.9027 88.1849 16.528C88.3435 17.144 88.4229 17.8347 88.4229 18.6C88.4229 20.2333 88.0729 21.4887 87.3729 22.366C86.6822 23.234 85.6929 23.668 84.4049 23.668C83.7235 23.668 83.1309 23.5467 82.6269 23.304C82.1322 23.0613 81.7169 22.7207 81.3809 22.282C81.0542 21.834 80.8115 21.302 80.6529 20.686C80.4942 20.0607 80.4149 19.3653 80.4149 18.6ZM81.6469 18.6C81.6469 19.1413 81.6982 19.6547 81.8009 20.14C81.9129 20.6253 82.0809 21.0547 82.3049 21.428C82.5289 21.792 82.8135 22.086 83.1589 22.31C83.5135 22.5247 83.9289 22.632 84.4049 22.632C85.2729 22.632 85.9542 22.3053 86.4489 21.652C86.9435 20.9893 87.1909 19.972 87.1909 18.6C87.1909 18.068 87.1349 17.5593 87.0229 17.074C86.9202 16.5793 86.7522 16.15 86.5189 15.786C86.2949 15.4127 86.0055 15.1187 85.6509 14.904C85.3055 14.68 84.8902 14.568 84.4049 14.568C83.5462 14.568 82.8695 14.8993 82.3749 15.562C81.8895 16.2153 81.6469 17.228 81.6469 18.6Z" fill="black"/>
+        <g clip-path="url(#clip0_69631_608)">
+        <path d="M115.65 0.949951H115.55L102.05 2.34995V27.05L115.55 35.0499L128.95 27.05V2.34995L115.65 0.949951ZM127.05 13.05L115.55 6.24995V6.14995H115.45L115.35 6.04995V6.14995L103.95 13.05V4.04995L115.45 2.84995L127.05 4.04995V13.05ZM115.45 7.74995L126.95 14.45L122.45 17.05L115.35 12.85V14.25L121.25 17.75L120.35 18.25L115.35 15.25V16.65L119.15 18.95L118.35 19.45L115.35 17.65V19.05L117.25 20.15L115.45 21.25L104.05 14.55L115.45 7.74995ZM103.95 16.05L115.35 22.85V23.85L107.45 19.15V20.55L115.45 25.35V26.45L107.45 21.75V23.15L115.45 27.95L123.55 23.05V17.85L126.95 15.85V25.85L115.45 32.75L103.95 25.95V16.05Z" fill="black"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_69631_608">
+        <rect width="28" height="35" fill="white" transform="translate(101.5 0.5)"/>
+        </clipPath>
+        </defs>
         </svg>
     </span>
   </div>
