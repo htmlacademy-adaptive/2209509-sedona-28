@@ -7,6 +7,7 @@
 
 .content-white__title {
   font-size: 21px;
+  font-weight: 700;
 }
 
 
@@ -18,26 +19,53 @@
 @media screen and (min-width: 320px) {
   .content-white {
     display: grid;
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
 
   .content-white__block {
     display: grid;
-    grid-template-columns: 70px;
-    gap: 20px;
-    margin-top: 60px;
+    grid-template-columns: 45px;
     margin-left: 20px;
-  }
-
-  .content-white__text {
-    display: grid;
-    grid-column: 2/2;
-    align-items: center;
   }
 
   .content-white__title {
     display: grid;
     grid-column: 2/2;
     align-items: center;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 12px;
+  }
+
+  .content-white__text {
+    display: grid;
+    grid-column: 2/2;
+    align-items: center;
+    width: 245px;
+  }
+
+  .content-white__home {
+    background-image: url("../img/home-mobile.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+  }
+
+  .content-white__eat {
+    background-image: url("../img/burger-mobile.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .content-white__gift {
+    background-image: url("../img/gift-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 40px;
+    height: 45px;
   }
 }
 
@@ -45,6 +73,7 @@
   .content-white {
     display: flex;
     justify-items: center;
+    margin: 0;
   }
 
   .content-white__block {
@@ -77,6 +106,30 @@
     width: 190px;
     font-size: 14px;
     margin: 0;
+  }
+
+  .content-white__home {
+    background-image: url("../img/home-tablet.svg");
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 77px;
+    grid-column: 2/2;
+  }
+
+  .content-white__eat {
+    background-image: url("../img/burger-tablet.svg");
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 77px;
+    grid-column: 2/2;
+  }
+
+  .content-white__gift {
+    background-image: url("../img/gift-tablet.svg");
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 80px;
+    grid-column: 2/2;
   }
 }
 
@@ -112,5 +165,29 @@
     width: 300px;
     font-size: 14px;
     margin-top: 20px;
+  }
+
+  .content-white__home {
+    background-image: url("../img/home-desktop.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 79px;
+    grid-column: 2/2;
+  }
+
+  .content-white__eat {
+    background-image: url("../img/burger-desktop.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 79px;
+    grid-column: 2/2;
+  }
+
+  .content-white__gift {
+    background-image: url("../img/gift-desktop.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 85px;
+    grid-column: 2/2;
   }
 }

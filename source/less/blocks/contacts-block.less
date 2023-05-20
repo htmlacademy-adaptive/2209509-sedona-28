@@ -46,7 +46,17 @@
   .contacts-block {
     text-transform: uppercase;
     font-size: 18px;
-    margin: 5px 0 0 20px;
+    margin: 0 0 0 20px;
+  }
+
+  .contacts-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 250px;
   }
 
   .contacts-block__title {
@@ -74,6 +84,11 @@
 
 
 @media screen and (min-width: 768px) {
+  .contacts-block::before {
+    content: "";
+    display: none;
+  }
+
   .contacts-block__title {
     font-size: 21px;
     margin: 15px 0 0 0;
@@ -96,7 +111,7 @@
   .contacts-block {
     text-transform: uppercase;
     font-size: 18px;
-    margin: 0;
+    margin-left: 40px;
   }
 
   .contacts-block__title {

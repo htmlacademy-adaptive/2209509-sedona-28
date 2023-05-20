@@ -61,6 +61,21 @@ input[type="checkbox"] + .sight-block__label span:active {
 }
 
 @media screen and (min-width: 320px) {
+  .sight-block {
+    display: grid;
+    margin: 0 0 0 20px;
+  }
+
+  .sight-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 340px;
+  }
+
   .sight-block__title {
     text-align: center;
     font-size: 18px;
@@ -76,7 +91,31 @@ input[type="checkbox"] + .sight-block__label span:active {
   .sight-block {
     display: grid;
     justify-items: center;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
+  }
+
+  .sight-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 30px;
+    left: 0;
+    margin-left: 55px;
+  }
+
+  .sight-block::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 30px;
+    right: 0;
+    margin-right: 55px;
   }
 
   .sight-block__title {
@@ -93,7 +132,31 @@ input[type="checkbox"] + .sight-block__label span:active {
 
 @media screen and (min-width: 1280px) {
   .sight-block {
+    position: relative;
     margin-bottom: 88px;
+  }
+
+  .sight-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 25px;
+    left: 0;
+    margin-left: 55px;
+  }
+
+  .sight-block::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 25px;
+    right: 0;
   }
 
   .sight-block__title {
