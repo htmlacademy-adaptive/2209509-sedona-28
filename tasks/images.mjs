@@ -7,30 +7,30 @@ const SUFFIX = { suffix: "@2x" };
 const OPTIONS = createOptionsFormat();
 
 function processImages() {
-	return gulp
-		.src("source/img/**/*.{png,jpg}")
-		.pipe(cache(sharpResponsive(OPTIONS)))
-		.pipe(gulp.dest("build/img"));
+  return gulp
+    .src("source/img/**/*.{png,jpg}")
+    .pipe(cache(sharpResponsive(OPTIONS)))
+    .pipe(gulp.dest("build/img"));
 }
 
 function createOptionsFormat() {
-	const formats = [];
+  const formats = [];
 
-	for (const format of [undefined, "avif", "webp"]) {
-		formats.push(
-			{
-				width: RE_SIZERS[0],
-				rename: SUFFIX,
-				format,
-			},
-			{
-				width: RE_SIZERS[1],
-				format,
-			}
-		);
-	}
+  for (const format of [undefined, "avif", "webp"]) {
+    formats.push(
+      {
+        width: RE_SIZERS[0],
+        rename: SUFFIX,
+        format,
+      },
+      {
+        width: RE_SIZERS[1],
+        format,
+      }
+    );
+  }
 
-	return {formats};
+  return {formats};
 }
 
 export { processImages };

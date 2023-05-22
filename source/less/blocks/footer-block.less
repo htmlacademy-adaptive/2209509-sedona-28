@@ -1,6 +1,17 @@
 .footer-block {
   text-transform: uppercase;
   color: #000000;
+  display: grid;
+  gap: 28px;
+  justify-content: center;
+  justify-items: center;
+  padding-block: var(--side-offset);
+  padding-inline: var(--side-offset);
+}
+
+.footer-block__title {
+  font-size: 21px;
+  margin-block: 0 calc(31px - 30px);
 }
 
 .footer-block__copyright {
@@ -16,63 +27,12 @@
   gap: 12px;
 }
 
-.socials-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.socials-list__link {
-  display: block;
-}
-
-.socials-list__icon {
-  display: block;
-  width: 48px;
-  height: 48px;
-  background-color: #81b3d2;
-  padding: 15px;
-}
-
-@media screen and (min-width: 320px) {
-  .footer-block {
-    display: grid;
-    gap: 10px;
-    justify-content: center;
-    justify-items: center;
-  }
-
-  .socials-list {
-    display: grid;
-    grid-template-columns: 48px 48px 48px;
-    gap: 6px;
-  }
-
-  .footer-block__title {
-    font-size: 21px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 60px 30px 60px;
-  }
-
-  .footer-block__title {
-    width: 200px;
-    font-size: 21px;
-  }
-
-  .socials {
-    width: 200px;
-    margin-right: 25px;
-  }
-
-  .socials-list {
-    padding: 0;
+    padding-block: 30px;
   }
 }
 
@@ -81,41 +41,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 120px 30px 120px;
+    padding-block: 30px;
   }
-
-  .footer-block__title {
-    font-size: 21px;
-  }
-
-  .socials {
-    margin-right: 25px;
-    width: 200px;
-  }
-}
-
-.socials-list__icon:hover {
-  background-color: #669ec0;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
-}
-
-.socials-list__icon:active {
-  background-color: #5496bd;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
-}
-
-.socials-list__picture:active {
-  fill: #87b5d1;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
-}
-
-.socials-list__img {
-  fill: #ffffff;
-}
-
-.socials-list__img:active {
-  fill: #87b5d1;
 }

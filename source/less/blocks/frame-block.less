@@ -15,6 +15,8 @@
 }
 
 .frame-block__video {
+  display: flex;
+  place-content: center;
   max-width: 800px;
   margin-inline: auto;
 }
@@ -26,9 +28,9 @@
   }
 
   .frame-block__text {
-    font-size: 14px;
     width: 270px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
   }
 
   .frame-block__title {
@@ -38,11 +40,10 @@
 
 @media screen and (min-width: 768px) {
   .frame-block {
-    margin: 27px 28px 40px;
+    margin: 55px 28px 40px;
   }
 
   .frame-block__title {
-    padding-bottom: 30px;
     font-size: 30px;
   }
 
@@ -66,8 +67,6 @@
   }
 
   .frame-block__text {
-    width: 450px;
-    margin: 0 auto;
     padding-bottom: 90px;
   }
 }

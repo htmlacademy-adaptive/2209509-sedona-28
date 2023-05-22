@@ -1,12 +1,10 @@
 .form-block {
   text-transform: uppercase;
-  font-size: 18px;
 }
 
 .form-block__title {
   font-size: 20px;
-  text-align: center;
-  margin: 0;
+  margin: 0 0 0 67px;
 }
 
 .form-block__label {
@@ -30,7 +28,7 @@
 @media screen and (min-width: 320px) {
   .form-block {
     position: relative;
-    padding: 0 0 60px 5px;
+    padding: 0 0 60px 15px;
   }
 
   .form-block::before {
@@ -46,11 +44,12 @@
   .form-block__title {
     font-size: 18px;
     margin-top: 18px;
+    margin-bottom: 20px;
   }
 
   .form-block__field {
     display: grid;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .form-block__label {
@@ -61,11 +60,48 @@
   .form-block__input {
     width: 280px;
     height: 58px;
-    padding: 20px;
+    padding: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .form-block {
+    margin: 0 0 4px 45px;
+  }
+
+  .form-block::before {
+    content: "";
+    display: block;
+    top: 0;
+    width: 1px;
+    height: 338px;
+    background-color: #e5e5e5;
+    margin: 0 0 0 325px;
+  }
+
+  .form-block__title {
+    font-size: 21px;
+    margin-bottom: 25px;
+  }
+
+  .form-block__input {
+    width: 295px;
+    height: 58px;
+    margin-right: 20px;
+  }
+
+  .form-block__label {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+
+  .form-block__field {
+    margin-top: 17px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
   .form-block {
     margin: 0 0 5px 20px;
   }
@@ -77,39 +113,11 @@
     width: 1px;
     height: 338px;
     background-color: #e5e5e5;
-    margin: 0 0 0 328px;
-  }
-
-  .form-block__input {
-    width: 295px;
-    height: 58px;
-    padding: 16px;
-    margin-right: 20px;
-  }
-
-  .form-block__label {
-    margin-left: 20px;
-  }
-}
-
-
-@media screen and (min-width: 1200px) {
-  .form-block {
-    margin: 0 0 0 20px;
-  }
-
-  .form-block::before {
-    content: "";
-    display: block;
-    top: 0;
-    width: 1px;
-    height: 338px;
-    background-color: #e5e5e5;
-    margin: 0 0 0 480px;
+    margin: 0 0 0 475px;
   }
 
   .form-block__title {
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 130px;
     font-size: 21px;
   }
 
@@ -121,7 +129,7 @@
 
   .form-block__field {
     display: grid;
-    margin-top: 8px;
+    margin-top: 13px;
   }
 }
 

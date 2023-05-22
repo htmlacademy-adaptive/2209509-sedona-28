@@ -4,7 +4,6 @@
 }
 
 .header-menu__list {
-  position: absolute;
   background-color: #81b3d2;
   width: 100%;
   list-style: none;
@@ -25,33 +24,32 @@
 @media screen and (min-width: 320px) {
   .header-menu__list {
     text-align: center;
-    margin: 0;
-    padding: 0;
     z-index: 6;
+    margin-top: 100px;
   }
 
-  .header-menu__list-wrapper::after {
+  .header-menu__item::after {
     content: "";
     position: absolute;
     background-color: #ffffff;
     width: 4px;
     height: 25px;
     left: 286px;
-    right: 6%;
-    top: 15px;
+    right: 30px;
+    top: 115px;
     transform: rotate(41deg);
     z-index: 10;
   }
 
-  .header-menu__list-wrapper::before {
+  .header-menu__item::before {
     content: "";
     position: absolute;
     background-color: #ffffff;
     width: 4px;
     height: 25px;
     left: 286px;
-    right: 6%;
-    top: 15px;
+    right: 30px;
+    top: 115px;
     transform: rotate(-41deg);
     z-index: 10;
   }
@@ -64,10 +62,6 @@
     &--lost {
       box-shadow: inset 1px rgba(255, 255, 255, 0.2);
     }
-  }
-
-  .header-menu__list-wrapper--hidden {
-    visibility: hidden;
   }
 
   .header-menu__item:hover {
@@ -101,6 +95,15 @@
     padding: 17px 20px 17px 20px;
   }
 
+  .header-menu__item::before {
+    display: none;
+  }
+
+  .header-menu__item::after {
+    display: none;
+  }
+
+
   .header-menu__link {
     font-style: normal;
     font-weight: 700;
@@ -109,10 +112,6 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-  }
-
-  .header-menu__link:current {
-    color: #766357;
   }
 
   .header-menu__item:hover {
@@ -135,6 +134,10 @@
     background-color: #ffffff;
     transition-duration: 300ms;
     transition-timing-function: ease-in;
+  }
+
+  .header-menu__link--current {
+    color: #766357;
   }
 }
 
@@ -159,20 +162,6 @@
     padding: 17px 20px 17px 20px;
   }
 
-  .header-menu__link {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
-  }
-
-  .header-menu__link:current {
-    color: #766357;
-  }
-
   .header-menu__link:hover {
     color: #81b3d2;
     background-color: #ffffff;
@@ -180,7 +169,7 @@
     transition-timing-function: ease-in;
   }
 
-  .header-menu__item:active {
+  .header-menu__link:active {
     color: #b3b3b3;
     background-color: #ffffff;
   }

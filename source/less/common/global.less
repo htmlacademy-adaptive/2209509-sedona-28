@@ -5,8 +5,17 @@
 }
 
 html {
+  --side-offset: 20px;
   height: 100%;
   background-color: #e8e8e8;
+
+  @media screen and (min-width: 768px) {
+    --side-offset: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --side-offset: 120px;
+  }
 }
 
 body {
@@ -17,13 +26,8 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: #ffffff;
-  box-shadow: 0 1px 0 rgba(1, 1, 3, 0.2), inset 5px rgba(255, 255, 255, 0.2);
 }
 
 .link {
   text-decoration: none;
-}
-
-picture {
-  display: flex;
 }

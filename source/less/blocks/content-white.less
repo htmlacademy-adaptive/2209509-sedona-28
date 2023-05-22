@@ -10,7 +10,6 @@
   font-weight: 700;
 }
 
-
 .content-white__text {
   font-size: 14px;
   line-height: 20px;
@@ -67,13 +66,17 @@
     width: 40px;
     height: 45px;
   }
+
+  .content-white__br {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .content-white {
     display: flex;
     justify-items: center;
-    margin: 0;
+    margin: 0 0 20px 0;
   }
 
   .content-white__block {
@@ -82,28 +85,28 @@
     width: 100%;
     gap: 0;
     justify-items: center;
-    padding: 0 0 70px 1px;
+    padding: 0 0 45px 1px;
     margin-top: 50px;
     margin-left: 0;
   }
 
   .content-white__icon {
-    display: grid;
     grid-row: 1/3;
     grid-column: 2/2;
     margin-bottom: 70px;
   }
 
   .content-white__title {
-    display: grid;
+    font-size: 21px;
     grid-row: 2/3;
+    padding-top: 23px;
+    padding-bottom: 20px;
   }
 
   .content-white__text {
-    display: grid;
     grid-row: 3/3;
     text-align: center;
-    width: 190px;
+    width: 160px;
     font-size: 14px;
     margin: 0;
   }
@@ -111,6 +114,7 @@
   .content-white__home {
     background-image: url("../img/home-tablet.svg");
     background-repeat: no-repeat;
+    background-position: bottom;
     width: 77px;
     height: 77px;
     grid-column: 2/2;
@@ -119,6 +123,7 @@
   .content-white__eat {
     background-image: url("../img/burger-tablet.svg");
     background-repeat: no-repeat;
+    background-position: bottom;
     width: 77px;
     height: 77px;
     grid-column: 2/2;
@@ -127,16 +132,20 @@
   .content-white__gift {
     background-image: url("../img/gift-tablet.svg");
     background-repeat: no-repeat;
+    background-position: bottom;
     width: 77px;
     height: 80px;
     grid-column: 2/2;
+  }
+
+  .content-white__br {
+    display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-white {
-    display: flex;
-    justify-content: center;
+    margin: 0 0 18px 0;
   }
 
   .content-white__block {
@@ -146,25 +155,19 @@
     justify-items: center;
     margin-top: 65px;
     margin-left: 0;
-    padding: 0 0 55px 1px;
-  }
-
-  .content-white__icon {
-    display: grid;
+    padding: 0 0 53px 1px;
   }
 
   .content-white__title {
-    display: grid;
     margin: 0;
     padding: 0;
   }
 
   .content-white__text {
-    display: grid;
     text-align: center;
     width: 300px;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 23px;
   }
 
   .content-white__home {
@@ -173,14 +176,17 @@
     width: 79px;
     height: 79px;
     grid-column: 2/2;
+    margin-bottom: 30px;
   }
 
   .content-white__eat {
     background-image: url("../img/burger-desktop.svg");
     background-repeat: no-repeat;
+    background-position: center;
     width: 79px;
     height: 79px;
     grid-column: 2/2;
+    margin-bottom: 10px;
   }
 
   .content-white__gift {
@@ -189,5 +195,6 @@
     width: 79px;
     height: 85px;
     grid-column: 2/2;
+    margin-bottom: 20px;
   }
 }
