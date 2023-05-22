@@ -1,5 +1,4 @@
 .content-grey {
-  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   color: #000000;
   background-color: #eeeeee;
@@ -23,8 +22,12 @@
 
 @media screen and (min-width: 320px) {
   .content-grey__block {
-    padding: 33px 41px;
+    padding: 5px 41px 15px 41px;
     border-bottom: 1px #d6d6d6;
+  }
+
+  .content-grey__br {
+    display: none;
   }
 }
 
@@ -33,27 +36,36 @@
     display: flex;
   }
 
+  .content-grey__title {
+    font-size: 21px;
+    margin: 10px 0 10px 0;
+  }
+
+  .content-grey__text {
+    margin-top: 25px;
+  }
+
   .content-grey__block {
     padding: 33px 41px;
+  }
+
+  .content-grey__br {
+    display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-grey__block {
-    padding: 33px 41px 40px 50px;
-  }
-
-  .content-grey {
-    display: flex;
+    padding: 50px 41px 40px 50px;
   }
 
   .content-grey__title {
-    font-size: 21px;
-    margin-bottom: 13px;
+    padding-bottom: 13px;
+    width: 170px;
+    margin: 0 auto;
   }
 
   .content-grey__text {
     margin-top: 24px;
   }
 }
-
