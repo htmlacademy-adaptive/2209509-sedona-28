@@ -2,7 +2,7 @@
  * @param {"production" | "development"} mode
  */
 function setMode(mode = "development") {
-	process.env.NODE_ENV = mode;
+  process.env.NODE_ENV = mode;
 }
 
 const isDev = () => process.env.NODE_ENV === "development";

@@ -1,13 +1,6 @@
 .contacts-block {
-  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
-}
-
-.contacts-block__title {
-  font-size: 20px;
-  text-align: center;
-  margin: 20px 0;
 }
 
 .contacts-block__label {
@@ -27,6 +20,9 @@
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.2);
+  background-image: url("../img/phone-icon.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .contacts-block__input-email {
@@ -37,23 +33,45 @@
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.2);
+  background-image: url("../img/email-icon.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 320px) {
-  .contacts-block__title {
-    margin: 0 0 16px 0;
+  .contacts-block {
+    margin: 0 0 0 20px;
   }
 
-  .contacts-block {
-    margin: 0 auto;
+  .contacts-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 250px;
+  }
+
+  .contacts-block__title {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
 
   .contacts-block__field {
     display: grid;
-    margin-top: 22px;
+    margin-top: 18px;
   }
 
-  .contacts-block__input-tel, .contacts-block__input-email {
+  .contacts-block__input-tel {
+    width: 280px;
+    height: 58px;
+    padding: 16px;
+  }
+
+  .contacts-block__input-email {
     width: 280px;
     height: 58px;
     padding: 16px;
@@ -62,26 +80,77 @@
 
 
 @media screen and (min-width: 768px) {
-  .contacts-block__input-tel, .contacts-block__input-email {
+  .contacts-block {
+    margin: 0 0 0 34px;
+  }
+
+  .contacts-block::before {
+    content: "";
+    display: none;
+  }
+
+  .contacts-block__title {
+    font-size: 21px;
+    margin: 15px 0 30px 0;
+  }
+
+  .contacts-block__input-tel {
     width: 295px;
     height: 58px;
     padding: 16px;
   }
+
+  .contacts-block__input-email {
+    width: 295px;
+    height: 58px;
+    padding: 16px;
+  }
+
+  .contacts-block__field {
+    margin-top: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-block__input-tel, .contacts-block__input-email {
+  .contacts-block {
+    margin-left: 40px;
+  }
+
+  .contacts-block__title {
+    margin: 0 0 0 75px;
+  }
+
+  .contacts-block__input-tel {
     width: 430px;
     height: 58px;
     padding: 16px;
   }
+
+  .contacts-block__input-email {
+    width: 430px;
+    height: 58px;
+    padding: 16px;
+  }
+
+  .contacts-block__field {
+    margin-top: 22px;
+  }
 }
 
-.contacts-block__input-tel:hover, .contacts-block__input-email:hover {
+.contacts-block__input-tel:hover {
   background-color: #e5e5e5;
 }
 
-.contacts-block__input-tel:active, .contacts-block__input-email:active {
+.contacts-block__input-email:hover {
+  background-color: #e5e5e5;
+}
+
+.contacts-block__input-tel:active {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+}
+
+.contacts-block__input-email:active {
   background-color: #ffffff;
   border: 4px solid #e5e5e5;
 }

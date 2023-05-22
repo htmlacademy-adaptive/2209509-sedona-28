@@ -1,0 +1,104 @@
+.hero-block {
+  background-image: url("../img/sedona-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-color: #e5f2fa;
+  margin: 0;
+  min-height: 518px;
+}
+
+@media (min-resolution: 2dpi) {
+  .hero-block {
+    background-image: url("../img/sedona-bg@2x.jpg");
+  }
+}
+
+.hero-block__logo {
+  display: grid;
+  justify-items: center;
+}
+
+.hero-block__page-logo {
+  display: grid;
+  justify-items: center;
+}
+
+@media screen and (min-width: 320px) {
+  .hero-block {
+    min-height: 390px;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 51% 100%, 0 94%);
+
+    &--inner {
+      min-height: 159px;
+      clip-path: polygon(100% 0, 100% 86%, 50% 100%, 0 86%, 0 0);
+    }
+  }
+
+  .hero-block__logo-img {
+    margin-top: 50px;
+  }
+
+  .hero-block__page-logo {
+    padding-top: 90px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-block {
+    min-height: 520px;
+    clip-path: polygon(0 92%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 36%, 100% 93%, 96% 93%, 96% 88%, 50% 100%, 4% 88%, 4% 93%);
+
+    &--inner {
+      min-height: 290px;
+      clip-path: polygon(0 87%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 88%, 96% 88%, 96% 81%, 50% 100%, 4% 81%, 4% 88%);
+    }
+  }
+
+  .hero-block__logo-img {
+    width: 456px;
+    height: auto;
+    margin-top: 90px;
+  }
+
+  .hero-block__page-logo-img {
+    width: 450px;
+    height: auto;
+  }
+
+  .hero-block__page-logo {
+    padding-top: 83px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-block {
+    min-height: 518px;
+    clip-path: polygon(0 88%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 28%, 100% 89%, 79% 94%, 79% 89%, 50% 100%, 21% 88%, 21% 93%);
+
+    &--inner {
+      clip-path: polygon(0 81%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 24%, 100% 80%, 79% 88%, 79% 81%, 50% 100%, 21% 80%, 21% 88%);
+      min-height: 300px;
+    }
+  }
+
+  .hero-block__logo-img {
+    width: 450px;
+    height: auto;
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  .hero-block__page-logo-img {
+    width: 460px;
+    height: auto;
+  }
+
+  .hero-block__page-logo {
+    padding-top: 83px;
+    margin: 0;
+  }
+}

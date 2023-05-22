@@ -1,10 +1,8 @@
 .sight-block {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
 }
 
 .sight-block__title {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -42,6 +40,18 @@ input[type="checkbox"]:checked + .sight-block__label span {
   background-position: center;
 }
 
+input[type="checkbox"] + .sight-block__label span:hover {
+  background-color: #e5e5e5;
+}
+
+input[type="checkbox"] + .sight-block__label span:active {
+  background-color: #d5d5d5;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
 .sight-block__input {
   font-style: normal;
   font-weight: 700;
@@ -51,44 +61,117 @@ input[type="checkbox"]:checked + .sight-block__label span {
 }
 
 @media screen and (min-width: 320px) {
+  .sight-block {
+    display: grid;
+    margin: 0 0 0 20px;
+  }
+
+  .sight-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 340px;
+  }
+
   .sight-block__title {
+    margin-right: 20px;
     text-align: center;
+    font-size: 18px;
   }
 
   .sight-block__field {
     display: grid;
-    gap: 16px;
+    grid-gap: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .sight-block {
-    display: grid;
     justify-items: center;
-    margin-bottom: 45px;
+    margin: 0 0 40px 0;
+  }
+
+  .sight-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 40px;
+    left: 0;
+    margin-left: 60px;
+  }
+
+  .sight-block::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 40px;
+    right: 0;
+    margin-right: 60px;
+  }
+
+  .sight-block__title {
+    font-size: 21px;
+    margin-left: 20px;
+    margin-bottom: 14px;
   }
 
   .sight-block__field {
     display: grid;
     grid-template-columns: repeat(2, 240px);
-    margin-left: 20px;
+    margin-left: 18px;
     margin-top: 15px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .sight-block {
-    margin-bottom: 90px;
+    position: relative;
+    margin-bottom: 88px;
+  }
+
+  .sight-block::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 40px;
+    left: 0;
+    margin-left: 120px;
+  }
+
+  .sight-block::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 40px;
+    right: 0;
+    margin-right: 120px;
   }
 
   .sight-block__title {
     text-align: center;
+    font-size: 21px;
   }
 
   .sight-block__field {
     display: flex;
+    flex-wrap: wrap;
     gap: 67px;
     justify-content: center;
-    margin-top: 42px;
+    margin: 42px 0 0 0;
   }
 }
