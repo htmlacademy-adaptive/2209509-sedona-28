@@ -26,11 +26,12 @@
 }
 
 
-input[type="radio"] {
-  display: none;
+.grade-block__input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
 }
 
-input[type="radio"] + .grade-block__label span {
+.grade-block__input[type="radio"] + .grade-block__label .grade-block__check {
   display: inline-block;
   width: 46px;
   height: 46px;
@@ -41,19 +42,19 @@ input[type="radio"] + .grade-block__label span {
   cursor: pointer;
 }
 
-input[type="radio"]:checked + .grade-block__label span {
+.grade-block__input[type="radio"]:checked + .grade-block__label .grade-block__check {
   background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-input[type="radio"] + .grade-block__label span:hover {
+.grade-block__input[type="radio"] + .grade-block__label .grade-block__check:hover {
   background-color: #e5e5e5;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-input[type="radio"] + .grade-block__label span:active {
+.grade-block__input[type="radio"] + .grade-block__label .grade-block__check:active {
   background-color: #d5d5d5;
   background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
