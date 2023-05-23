@@ -12,7 +12,7 @@
 }
 
 @media screen and (min-width: 320px) {
-  .header-menu__line {
+  .header-block__line {
     position: absolute;
     width: 22px;
     height: 4px;
@@ -22,7 +22,7 @@
     margin-top: 17px;
   }
 
-  .header-menu__line::after {
+  .header-block__line::after {
     content: "";
     position: absolute;
     width: 22px;
@@ -31,7 +31,7 @@
     margin-top: 8px;
   }
 
-  .header-menu__line::before {
+  .header-block__line::before {
     content: "";
     position: absolute;
     width: 22px;
@@ -40,20 +40,13 @@
     margin-top: 16px;
   }
 
-  .header-menu__line:hover {
+  .header-block__line:hover {
     background-color: #81b3d2;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header-menu__line {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@media screen and (width: 1200px) {
-  .header-menu__line {
+  .header-block__line {
     opacity: 0;
     visibility: hidden;
   }

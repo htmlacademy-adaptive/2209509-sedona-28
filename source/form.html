@@ -11,15 +11,14 @@
 <body>
   <header class="header-block">
       <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
+      <span class="header-block__line"></span>
       <div class="header-menu">
         <nav class="header-menu">
-          <div class="header-menu__btn">
-            <span class="header-menu__line"></span>
-          </div>
+          <span class="header-block__line"></span>
           <ul class="header-menu__list">
-            <li class="header-menu__item"><a href="index.html" class="header-menu__link header-menu__link--current">Главная</a><span class="header-menu__item--close"></span></li>
+            <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a><span class="header-menu__link-close"></span></li>
             <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
-            <li class="header-menu__item"><a href="form.html" class="header-menu__link">Форма Отзыва</a></li>
+            <li class="header-menu__item"><a href="form.html" class="header-menu__link header-menu__link--current">Форма Отзыва</a></li>
             <li class="header-menu__item header-menu__item--lost"><a href="#" class="header-menu__link">HTML ACADEMY</a></li>
         </ul>
         </nav>
@@ -77,29 +76,28 @@
     <div class="grade-block">
       <h2 class="grade-block__title">Ваше Общее впечатление:</h2>
       <div class="grade-block__field">
-        <input class="grade-block__input" id="positive" type="radio" name="grade"  checked="checked"><label for="positive" class="grade-block__label"><span class="grade-block__check"></span>Скорее положительное</label>
-        <input class="grade-block__input" id="negative" type="radio" name="grade"><label for="negative" class="grade-block__label"><span class="grade-block__check"></span>Скорее отрицательное</label>
-        <input class="grade-block__input" id="difficult" type="radio" name="grade"><label for="difficult" class="grade-block__label"><span class="grade-block__check"></span>Затрудняюсь ответить</label>
+        <input class="grade-block__input" id="positive" type="radio" name="grade"  checked="checked"><label for="positive" class="grade-block__label"><span class="grade-block__check" tabindex="0"></span>Скорее положительное</label>
+        <input class="grade-block__input" id="negative" type="radio" name="grade"><label for="negative" class="grade-block__label"><span class="grade-block__check" tabindex="0"></span>Скорее отрицательное</label>
+        <input class="grade-block__input" id="difficult" type="radio" name="grade"><label for="difficult" class="grade-block__label"><span class="grade-block__check" tabindex="0"></span>Затрудняюсь ответить</label>
         </div>
     </div>
 
     <div class="sight-block">
       <h2 class="sight-block__title">посещенные <br>достопримечательности:</h2>
       <div class="sight-block__field">
-        <input class="sight-block__input" id="devils-bridge" type="checkbox" name="sight" value="мост дьявола" checked="checked"><label for="devils-bridge" class="sight-block__label"><span class="sight-block__check"></span> Мост дьявола</label>
-        <input class="sight-block__input" id="Mount-Bell" type="checkbox" name="sight" value="Гора-Колокол"  checked="checked"><label for="Mount-Bell" class="sight-block__label"><span class="sight-block__check"></span> Гора-Колокол</label>
-        <input class="sight-block__input" id="slide-park" type="checkbox" name="sight" value="Слайд-парк"  checked="checked"><label for="slide-park" class="sight-block__label"><span class="sight-block__check"></span> Слайд-парк</label>
-        <input class="sight-block__input" id="red-rocks" type="checkbox" name="sight" value="Красные скалы"><label for="red-rocks" class="sight-block__label"><span class="sight-block__check"></span> Красные скалы</label>
+        <input class="sight-block__input" id="devils-bridge" type="checkbox" name="sight" value="мост дьявола" checked="checked"><label for="devils-bridge" class="sight-block__label"><span class="sight-block__check" tabindex="0"></span> Мост дьявола</label>
+        <input class="sight-block__input" id="Mount-Bell" type="checkbox" name="sight" value="Гора-Колокол"  checked="checked"><label for="Mount-Bell" class="sight-block__label"><span class="sight-block__check" tabindex="0"></span> Гора-Колокол</label>
+        <input class="sight-block__input" id="slide-park" type="checkbox" name="sight" value="Слайд-парк"  checked="checked"><label for="slide-park" class="sight-block__label"><span class="sight-block__check" tabindex="0"></span> Слайд-парк</label>
+        <input class="sight-block__input" id="red-rocks" type="checkbox" name="sight" value="Красные скалы"><label for="red-rocks" class="sight-block__label"><span class="sight-block__check" tabindex="0"></span> Красные скалы</label>
     </div>
   </div>
 
     <div class="review-block">
       <h2 class="review-block__title">Опишите свои эмоции:</h2>
       <div class="review-block__field">
-        <label for="review-field" class="review-block__label">
-        <textarea class="review-block__input" id="review-field" name="review" id="review" cols="30" rows="10"></textarea>
+        <label for="review" class="review-block__label visually-hidden">Отзыв</label>
+        <textarea class="review-block__input" name="review" id="review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
         <button class="button review-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-      </label>
         <span class="review-block__necessarily">* — обязательные поля</span>
     </div>
     </div>
