@@ -41,22 +41,41 @@
   background-position: center;
 }
 
-.sight-block__input[type="checkbox"] + .sight-block__label .sight-block__check:hover {
-  background-color: #e5e5e5;
-}
-
-.sight-block__input[type="checkbox"] + .sight-block__label .sight-block__check:active {
-  background-color: #d5d5d5;
-  background-image: url("../img/check.svg");
+.sight-block__input[type="checkbox"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.5;
 }
 
+.sight-block__input[type="checkbox"] + .sight-block__label .sight-block__check:hover {
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sight-block__input[type="checkbox"]:active {
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.sight-block__input[type="checkbox"] + .sight-block__label .sight-block__check:active {
+  background-color: #d5d5d5;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sight-block__input[type="checkbox"]:focus {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .sight-block__input[type="checkbox"] + .sight-block__label .sight-block__check:focus {
   background-color: #d5d5d5;
-  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 .sight-block__input {
   font-style: normal;
