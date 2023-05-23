@@ -17,11 +17,11 @@
             <span class="header-menu__line"></span>
           </div>
           <ul class="header-menu__list">
-              <li class="header-menu__item"><a href="index.html" class="header-menu__link">Главная</a></li>
-              <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
-              <li class="header-menu__item"><a href="form.html" class="header-menu__link header-menu__link--current">Форма Отзыва</a></li>
-              <li class="header-menu__item header-menu__item--lost"><a href="#" class="header-menu__link">HTML ACADEMY</a></li>
-          </ul>
+            <li class="header-menu__item"><a href="index.html" class="header-menu__link header-menu__link--current">Главная</a><span class="header-menu__item--close"></span></li>
+            <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
+            <li class="header-menu__item"><a href="form.html" class="header-menu__link">Форма Отзыва</a></li>
+            <li class="header-menu__item header-menu__item--lost"><a href="#" class="header-menu__link">HTML ACADEMY</a></li>
+        </ul>
         </nav>
       </div>
   </header>
@@ -96,8 +96,10 @@
     <div class="review-block">
       <h2 class="review-block__title">Опишите свои эмоции:</h2>
       <div class="review-block__field">
-        <textarea class="review-block__input" name="review" id="review" cols="30" rows="10"></textarea>
+        <label for="review-field" class="review-block__label">
+        <textarea class="review-block__input" id="review-field" name="review" id="review" cols="30" rows="10"></textarea>
         <button class="button review-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      </label>
         <span class="review-block__necessarily">* — обязательные поля</span>
     </div>
     </div>

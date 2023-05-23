@@ -28,33 +28,8 @@
     margin-top: 100px;
   }
 
-  .header-menu__item::after {
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    width: 4px;
-    height: 25px;
-    left: 286px;
-    right: 30px;
-    top: 115px;
-    transform: rotate(41deg);
-    z-index: 10;
-  }
-
-  .header-menu__item::before {
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    width: 4px;
-    height: 25px;
-    left: 286px;
-    right: 30px;
-    top: 115px;
-    transform: rotate(-41deg);
-    z-index: 10;
-  }
-
   .header-menu__item {
+    position: relative;
     padding: 15px 0 15px 0;
     mix-blend-mode: normal;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -62,6 +37,17 @@
     &--lost {
       box-shadow: inset 1px rgba(255, 255, 255, 0.2);
     }
+  }
+
+  .header-menu__item--close {
+    position: absolute;
+    background-image: url("../img/icon-cross.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    right: 20px;
+    top: 18px;
+    width: 22px;
+    height: 22px;
   }
 
   .header-menu__item:hover {
