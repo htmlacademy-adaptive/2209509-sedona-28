@@ -18,20 +18,14 @@
   color: #000000;
 }
 
-.grade-block__input {
+.grade-block__radio {
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
 }
 
-
-.grade-block__input[type="radio"] {
-  position: absolute;
-  visibility: hidden;
-}
-
-.grade-block__input[type="radio"] + .grade-block__label .grade-block__check {
+.grade-block__radio + .grade-block__label .grade-block__check {
   display: inline-block;
   width: 46px;
   height: 46px;
@@ -42,42 +36,25 @@
   cursor: pointer;
 }
 
-.grade-block__input[type="radio"]:checked + .grade-block__label .grade-block__check {
+.grade-block__radio:checked + .grade-block__label .grade-block__check {
   background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.grade-block__input[type="radio"]:hover {
+.grade-block__radio:hover {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.5;
 }
 
-.grade-block__input[type="radio"] + .grade-block__label .grade-block__check:hover {
+.grade-block__radio + .grade-block__label .grade-block__check:hover {
   background-color: #e5e5e5;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.grade-block__input[type="radio"]:active {
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.2;
-}
-
-.grade-block__input[type="radio"] + .grade-block__label .grade-block__check:active {
-  background-color: #d5d5d5;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.grade-block__input[type="radio"]:focus {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.grade-block__input[type="radio"] + .grade-block__label .grade-block__check:focus {
+.grade-block__radio:focus + .grade-block__label .grade-block__check {
   background-color: #d5d5d5;
   background-repeat: no-repeat;
   background-position: center;
