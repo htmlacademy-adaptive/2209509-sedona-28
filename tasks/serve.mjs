@@ -24,7 +24,7 @@ const streamStyles = () => compileLess().pipe(server.stream());
 async function serve() {
   server.init(SERVER_OPTIONS);
 
-  gulp.watch("source/**/*.html", html);
+  gulp.watch("source/**/*.html", gulp.series(html, server));
   gulp.watch("source/public/**/*", copyAssets);
   gulp.watch("source/less/**/*.less", streamStyles);
   gulp.watch("source/img/**/*.{png,jpg}", processImages);
