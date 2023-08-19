@@ -1,7 +1,7 @@
 .hero-block {
   background-image: url("../img/sedona-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   object-fit: cover;
   background-color: #e5f2fa;
@@ -11,7 +11,7 @@
 
 @media (min-resolution: 2dpi) {
   .hero-block {
-    background-image: url("../img/sedona-bg@2x.jpg");
+    background-image: url("../img/sedona-bg.jpg");
   }
 }
 
@@ -29,8 +29,10 @@
   .hero-block {
     min-height: 390px;
     clip-path: polygon(0 0, 100% 0, 100% 94%, 51% 100%, 0 94%);
+    margin-top: 55px;
 
     &--inner {
+      background-image: url("../img/sedona-bg-inner-mobile.jpg");
       min-height: 159px;
       clip-path: polygon(100% 0, 100% 86%, 50% 100%, 0 86%, 0 0);
     }
@@ -50,8 +52,10 @@
   .hero-block {
     min-height: 520px;
     clip-path: polygon(0 92%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 36%, 100% 93%, 96% 93%, 96% 88%, 50% 100%, 4% 88%, 4% 93%);
+    margin-top: 0;
 
     &--inner {
+      background-image: url("../img/sedona-bg-inner-tablet.jpg");
       min-height: 290px;
       clip-path: polygon(0 87%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 88%, 96% 88%, 96% 81%, 50% 100%, 4% 81%, 4% 88%);
     }
@@ -60,7 +64,7 @@
   .hero-block__logo-img {
     width: 456px;
     height: auto;
-    margin-top: 90px;
+    margin-top: 95px;
   }
 
   .hero-block__page-logo-img {
@@ -69,7 +73,7 @@
   }
 
   .hero-block__page-logo {
-    padding-top: 83px;
+    padding-top: 80px;
     margin: 0;
   }
 }
@@ -80,6 +84,7 @@
     clip-path: polygon(0 88%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 28%, 100% 89%, 79% 94%, 79% 89%, 50% 100%, 21% 88%, 21% 93%);
 
     &--inner {
+      background-image: url("../img/sedona-bg-inner-desktop.jpg");
       clip-path: polygon(0 81%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 24%, 100% 80%, 79% 88%, 79% 81%, 50% 100%, 21% 80%, 21% 88%);
       min-height: 300px;
     }
@@ -98,7 +103,7 @@
   }
 
   .hero-block__page-logo {
-    padding-top: 83px;
+    padding-top: 80px;
     margin: 0;
   }
 }

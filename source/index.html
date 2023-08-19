@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="public/favicon.ico" sizes="32x32" type="image/x-icon">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
     <header class="header-block">
-        <a class="header-block__logo-link" href="index.html"><img class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
+        <a class="header-block__logo-link" href="index.html"><img width="185" height="96" class="header-block__logo" src="img/logo.svg" alt="Логотип Седона"></a>
             <span class="header-block__line"></span>
         <nav class="header-menu">
-          <ul class="header-menu__list">
+          <!--header-menu__list--close для закрытия меню-->
+          <!--header-menu__list--absolute меню вне потока-->
+          <ul class="header-menu__list header-menu__list--close">
               <li class="header-menu__item"><a href="index.html" class="header-menu__link header-menu__link--current">Главная</a><span class="header-menu__link-close"></span></li>
               <li class="header-menu__item"><a href="catalog.html" class="header-menu__link">Фото и видео</a></li>
               <li class="header-menu__item"><a href="form.html" class="header-menu__link">Форма Отзыва</a></li>
@@ -26,7 +30,7 @@
     <section class="hero-block">
       <h2 class="visually-hidden">Седона</h2>
       <div class="hero-block__page-logo">
-        <img class="hero-block__page-logo-img" src="img/sedona-page-logo-mobile.svg" alt="Добро пожаловать в Седону">
+        <img width="282" height="214" class="hero-block__page-logo-img" src="img/sedona-page-logo-mobile.svg" alt="Добро пожаловать в Седону">
       </div>
     </section>
 
@@ -41,19 +45,19 @@
           <div class="content-blue-path__info-hotel">
           <h2 class="content-blue-path__title">Настоящий городок</h2>
           <span class="content-blue-path__number">— №1 —</span>
-          <p class="content-blue-path__text">Седона не аттракцион для туристов,<br class="content-blue-path__br"> там течет своя жизнь!</p>
+          <p class="content-blue-path__text">Седона не аттракцион для туристов,<br class="content-blue-path__br">там течет своя жизнь!</p>
         </div>
           <div class="content-blue-path__hotel">
             <picture style="display: flex;">
-            <source media="(min-width: 1200px)" srcset="img/sedona-hotel-desktop@2x.jpg" type="image/jpg">
+            <source media="(min-width: 1200px)" srcset="img/sedona-hotel-desktop.jpg" type="image/jpg">
             <source media="(min-width: 1200px)" srcset="img/sedona-hotel-desktop.avif 1x, img/sedona-hotel-desktop@2x.avif 2x" type="image/avif">
             <source media="(min-width: 1200px)" srcset="img/sedona-hotel-desktop.webp 1x, img/sedona-hotel-desktop@2x.webp 2x" type="image/webp">
 
-            <source media="(min-width: 768px)" width="512" height="256" srcset="img/sedona-hotel-tablet@2x.jpg" type="image/jpg">
+            <source media="(min-width: 768px)" width="512" height="256" srcset="img/sedona-hotel-tablet.jpg" type="image/jpg">
             <source media="(min-width: 768px)" width="512" height="256" srcset="img/page-devils-bridge-tablet.avif 1x, img/page-devils-bridge-tablet@2x.avif 2x">
             <source media="(min-width: 768px)" width="512" height="256" srcset="img/sedona-hotel-tablet.webp 1x, img/sedona-hotel-tablet@2x.webp 2x">
 
-            <source media="(min-width: 320px)" width="320" height="260" srcset="img/hotel-sedona-mobile@2x.jpg">
+            <source media="(min-width: 320px)" width="320" height="260" srcset="img/hotel-sedona-mobile.jpg">
             <source media="(min-width: 320px)" width="320" height="260" srcset="img/hotel-sedona-mobile.avif 1x, img/hotel-sedona-mobile@2x.avif 2x" type="image/avif">
             <source media="(min-width: 320px)" width="320" height="260" srcset="img/hotel-sedona-mobile.webp 1x, img/hotel-sedona-mobile@2x.webp 2x" type="image/webp">
             <img class="content-blue-path__hotel-img" src="img/sedona-hotel-mobile.jpg" srcset="img/sedona-hotel-desktop@2x.jpg" alt="Отель в Седоне">
@@ -64,12 +68,12 @@
         <div class="content-white__block">
           <span class="content-white__home"></span>
           <h2 class="content-white__title">Жилье</h2>
-          <p class="content-white__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="content-white__text">Рекомендуем пожить&nbsp;в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="content-white__block">
           <span class="content-white__eat"></span>
           <h2 class="content-white__title">Еда</h2>
-          <p class="content-white__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <p class="content-white__text">Всегда заказывайте фирменный бургер, <br class="content-white__text-br">вы не разочаруетесь!</p>
         </div>
         <div class="content-white__block">
           <span class="content-white__gift"></span>
@@ -85,15 +89,15 @@
         </div>
         <div class="content-blue__bridge">
           <picture style="display: flex;">
-            <source media="(min-width: 1200px)" srcset="img/page-devils-bridge-desktop@2x.jpg" type="image/jpg">
+            <source media="(min-width: 1200px)" srcset="img/page-devils-bridge-desktop.jpg" type="image/jpg">
             <source media="(min-width: 1200px)" srcset="img/page-devils-bridge-desktop.avif 1x, img/page-devils-bridge-desktop@2x.avif 2x" type="image/avif">
             <source media="(min-width: 1200px)" srcset="img/page-devils-bridge-desktop.webp 1x, img/page-devils-bridge-desktop@2x.webp 2x" type="image/webp">
 
-            <source media="(min-width: 768px)" width="512" height="256" srcset="img/page-devils-bridge-tablet@2x.jpg" type="image/jpg">
+            <source media="(min-width: 768px)" width="512" height="256" srcset="img/page-devils-bridge-tablet.jpg" type="image/jpg">
             <source media="(min-width: 768px)" width="512" height="256" srcset="img/page-devils-bridge-tablet.avif 1x, img/page-devils-bridge-tablet@2x.avif 2x" type="image/avif">
             <source media="(min-width: 768px)" width="512" height="256" srcset="img/page-devils-bridge-tablet.webp 1x, img/page-devils-bridge-tablet@2x.webp 2x" type="image/webp">
 
-            <source media="(min-width: 320px)" width="320" height="260" srcset="img/page-devils-bridge-mobile@2x.jpg">
+            <source media="(min-width: 320px)" width="320" height="260" srcset="img/page-devils-bridge-mobile.jpg">
             <source media="(min-width: 320px)" width="320" height="260" srcset="img/page-devils-bridge-mobile.avif 1x, img/page-devils-bridge-mobile@2x.avif 2x">
             <source media="(min-width: 320px)" width="320" height="260" srcset="img/page-devils-bridge-mobile.webp 1x, img/page-devils-bridge-mobile@2x.webp 2x">
             <img class="content-blue__bridge-img" src="img/page-devils-bridge-mobile.jpg" srcset="img/page-devils-bridge-desktop@2x.jpg" alt="Мост Дьявола">
@@ -104,17 +108,17 @@
         <div class="content-grey__block">
           <h2 class="content-grey__title">Небольшая площадь</h2>
           <span class="content-grey__number">— №3 —</span>
-          <p class="content-grey__text">Все интересные места находятся очень близко</p>
+          <p class="content-grey__text">Все интересные&nbsp;места находятся очень близко</p>
         </div>
         <div class="content-grey__block">
-          <h2 class="content-grey__title">Красивая дорога</h2>
+          <h2 class="content-grey__title">Красивая <br class="content-grey__title-br">дорога</h2>
           <span class="content-grey__number">— №4 —</span>
-          <p class="content-grey__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="content-grey__text">Ехать в Седону из Лас-Вегаса совсем <br class="content-grey__text-br">не скучно!</p>
         </div>
         <div class="content-grey__block">
           <h2 class="content-grey__title">Мало <br class="content-grey__br">туристов</h2>
           <span class="content-grey__number">— №5 —</span>
-          <p class="content-grey__text">Большинство едет в Грандканьон и толпится там</p>
+          <p class="content-grey__text">Большинство едет в Гранд каньон и толпится там</p>
         </div>
       </div>
     </section>
@@ -134,36 +138,38 @@
     </section>
   </main>
 
-  <footer class="footer-block">
-    <h2 class="footer-block__title">#visitSEDONA</h2>
+  <footer class="page-footer-block">
+    <h2 class="page-footer-block__title">#visitSEDONA</h2>
   <div class="socials">
     <ul class="socials-list">
       <li class="socials-list__item">
-        <a class="socials-list__link" href="#"><svg class="socials-list__picture" width="25" height="14" viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg">
-          <title id="vk-icon"> WK</title>
-        <use href="img/stack.svg#vk"></use>
-          </svg></a>
+        <a class="socials-list__link" href="#">
+          <svg width="25" height="14" viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg">
+            <path class="socials-list__link-svg" fill-rule="evenodd" clip-rule="evenodd" d="M23.6331 0.948C23.7991 0.402 23.6331 0 22.8381 0H20.2131C19.5451 0 19.2371 0.347 19.0701 0.73C19.0701 0.73 17.7351 3.926 15.8441 6.002C15.2321 6.604 14.9541 6.795 14.6201 6.795C14.4531 6.795 14.2021 6.604 14.2021 6.057V0.948C14.2021 0.292 14.0181 0 13.4621 0H9.33411C8.91711 0 8.66611 0.304 8.66611 0.593C8.66611 1.214 9.61211 1.358 9.70911 3.106V6.904C9.70911 7.737 9.55611 7.888 9.22211 7.888C8.33211 7.888 6.16711 4.677 4.88211 1.003C4.63311 0.288 4.38111 0 3.71011 0H1.08311C0.333105 0 0.183105 0.347 0.183105 0.73C0.183105 1.412 1.07311 4.8 4.32811 9.281C6.49811 12.341 9.55311 14 12.3361 14C14.0051 14 14.2111 13.632 14.2111 12.997V10.684C14.2111 9.947 14.3691 9.8 14.8981 9.8C15.2881 9.8 15.9551 9.992 17.5131 11.467C19.2931 13.216 19.5861 14 20.5881 14H23.2131C23.9631 14 24.3391 13.632 24.1231 12.904C23.8851 12.18 23.0351 11.129 21.9081 9.882C21.2961 9.172 20.3781 8.407 20.0991 8.024C19.7101 7.533 19.8211 7.314 20.0991 6.877C20.0991 6.877 23.2991 2.451 23.6321 0.948H23.6331Z"/>
+            </svg>
+        </a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="#"><svg class="socials-list__picture" width="22" height="18" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg">
-          <title id="telegramm-icon">Telegramm</title>
-        <use href="img/stack.svg#telegramm"></use>
-          </svg></a>
+        <a class="socials-list__link" href="#">
+          <svg class="socials-list__link-svg" width="22" height="18" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.6223 1.62225L18.4535 16.566C18.2143 17.6205 17.591 17.883 16.7053 17.3865L11.8768 13.8285L9.54725 16.0695C9.28925 16.3275 9.074 16.5428 8.57675 16.5428L8.924 11.6258L17.8723 3.54C18.2615 3.1935 17.7875 3.00075 17.2678 3.348L6.20525 10.314L1.44275 8.823C0.407004 8.49975 0.388254 7.78725 1.65875 7.29L20.2865 0.113253C21.149 -0.209997 21.9035 0.305253 21.6223 1.623V1.62225Z"/>
+            </svg>
+        </a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="#"><svg class="socials-list__picture" width="21" height="14" viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg">
-          <title id="youtube-icon">youtube</title>
-        <use href="img/stack.svg#youtube"></use>
-          </svg></a>
+        <a class="socials-list__link" href="#">
+          <svg class="socials-list__link-svg" width="21" height="14" viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.3644 0H2.99641C1.48928 0 0.183105 1.3 0.183105 2.8V11.1C0.183105 12.7 1.48928 14 2.99641 14H17.3644C18.972 14 20.1777 12.7 20.1777 11.2V2.8C20.2781 1.3 18.972 0 17.3644 0ZM7.21637 10.4V3.6L14.0487 7L7.21637 10.4Z"/>
+            </svg>
+        </a>
       </li>
     </ul>
   </div>
-  <small class="footer-block__copyright">
+  <small class="page-footer-block__copyright">
   <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-block__copyright-link link" target="_blank">
       Разработано
-      <svg height="36" viewBox="0 0 27 36" role="img" aria-labelledby="academy-title">
-        <title id="academy-title"> в HTML Academy</title>
-        <use href="img/stack.svg#html-academy"></use>
+      <svg class="page-footer-block__copyright-svg" width="28" height="36" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.15 0.949951H14.05L0.550049 2.34995V27.05L14.05 35.0499L27.45 27.05V2.34995L14.15 0.949951ZM25.55 13.05L14.05 6.24995V6.14995H13.95L13.85 6.04995V6.14995L2.45005 13.05V4.04995L13.95 2.84995L25.55 4.04995V13.05ZM13.95 7.74995L25.45 14.45L20.95 17.05L13.85 12.85V14.25L19.75 17.75L18.85 18.25L13.85 15.25V16.65L17.65 18.95L16.85 19.45L13.85 17.65V19.05L15.75 20.15L13.95 21.25L2.55005 14.55L13.95 7.74995ZM2.45005 16.05L13.85 22.85V23.85L5.95005 19.15V20.55L13.95 25.35V26.45L5.95005 21.75V23.15L13.95 27.95L22.05 23.05V17.85L25.45 15.85V25.85L13.95 32.75L2.45005 25.95V16.05Z"/>
         </svg>
   </a>
 </small>

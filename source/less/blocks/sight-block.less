@@ -67,16 +67,18 @@
   .sight-block {
     display: grid;
     margin: 0 0 0 20px;
+    position: relative;
   }
 
   .sight-block::before {
     content: "";
     position: absolute;
     display: block;
-    width: 100%;
+    width: 320px;
     height: 1px;
     background-color: #e5e5e5;
     margin-top: 340px;
+    left: -26px;
   }
 
   .sight-block__title {
