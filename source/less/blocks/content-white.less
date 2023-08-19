@@ -18,6 +18,7 @@
 @media screen and (min-width: 320px) {
   .content-white {
     display: grid;
+    row-gap: 11px;
     margin-top: 25px;
     margin-bottom: 30px;
   }
@@ -34,7 +35,7 @@
     align-items: center;
     font-size: 18px;
     margin: 0;
-    padding-top: 12px;
+    padding-top: 0;
   }
 
   .content-white__text {
@@ -42,6 +43,7 @@
     grid-column: 2/2;
     align-items: center;
     width: 245px;
+    margin-top: 10px;
   }
 
   .content-white__home {
@@ -56,18 +58,23 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    margin-top: 10px;
   }
 
   .content-white__gift {
+    position: relative;
     background-image: url("../img/gift-mobile.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     width: 40px;
     height: 45px;
+    top: -4px;
   }
 
   .content-white__br {
+    display: none;
+  }
+
+  .content-white__text-br {
     display: none;
   }
 }
@@ -80,13 +87,14 @@
   }
 
   .content-white__block {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     gap: 0;
     justify-items: center;
+    align-items: center;
     padding: 0 0 45px 1px;
-    margin-top: 50px;
+    margin-top: 52px;
     margin-left: 0;
   }
 
@@ -99,15 +107,16 @@
   .content-white__title {
     font-size: 21px;
     grid-row: 2/3;
-    padding-top: 23px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 23px;
   }
 
   .content-white__text {
     grid-row: 3/3;
     text-align: center;
-    width: 160px;
+    width: 180px;
     font-size: 14px;
+    line-height: 20px;
     margin: 0;
   }
 
@@ -118,27 +127,38 @@
     width: 77px;
     height: 77px;
     grid-column: 2/2;
+    margin-bottom: 10px;
   }
 
   .content-white__eat {
+    position: relative;
     background-image: url("../img/burger-tablet.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     width: 77px;
     height: 77px;
     grid-column: 2/2;
+    top: 0;
+    margin-bottom: 10px;
   }
 
   .content-white__gift {
+    position: relative;
     background-image: url("../img/gift-tablet.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     width: 77px;
     height: 80px;
     grid-column: 2/2;
+    margin-bottom: 5px;
+    top: 7px;
   }
 
   .content-white__br {
+    display: block;
+  }
+
+  .content-white__text-br {
     display: block;
   }
 }
@@ -149,8 +169,6 @@
   }
 
   .content-white__block {
-    display: grid;
-    grid-template-columns: auto auto auto;
     gap: 0;
     justify-items: center;
     margin-top: 65px;
@@ -167,7 +185,7 @@
     text-align: center;
     width: 300px;
     font-size: 14px;
-    margin-top: 23px;
+    margin-top: 24px;
   }
 
   .content-white__home {
@@ -176,25 +194,31 @@
     width: 79px;
     height: 79px;
     grid-column: 2/2;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .content-white__eat {
+    position: relative;
+    top: 2px;
+    right: 3px;
     background-image: url("../img/burger-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 79px;
     height: 79px;
     grid-column: 2/2;
-    margin-bottom: 10px;
+    margin-bottom: 23px;
   }
 
   .content-white__gift {
+    position: relative;
     background-image: url("../img/gift-desktop.svg");
     background-repeat: no-repeat;
     width: 79px;
     height: 85px;
     grid-column: 2/2;
     margin-bottom: 20px;
+    top: -5px;
+    right: 4px;
   }
 }

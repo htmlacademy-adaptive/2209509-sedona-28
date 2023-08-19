@@ -7,6 +7,7 @@
   grid-auto-columns: 48px;
   grid-template-columns: repeat(3, 48px);
   gap: 6px;
+  margin-bottom: 2px;
 }
 
 .socials-list__link {
@@ -14,6 +15,10 @@
   place-items: center;
   height: 100%;
   background-color: #81b3d2;
+}
+
+.socials-list__link-svg {
+  fill: #ffffff;
 }
 
 .socials-list__link:hover {
@@ -28,14 +33,12 @@
   transition-timing-function: ease-in;
 }
 
-.socials-list__picture:active {
+.socials-list__link-svg:active {
   fill: #87b5d1;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
 }
 
 .socials-list__img {
   fill: #ffffff;
-}
-
-.socials-list__img:active {
-  fill: #87b5d1;
 }
