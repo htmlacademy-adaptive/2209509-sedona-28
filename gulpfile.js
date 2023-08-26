@@ -5,6 +5,8 @@ import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import csso from "postcss-csso";
 import rename from "gulp-rename";
+import { htmlValidator } from "gulp-w3c-html-validator";
+import bemlinter from "gulp-html-bemlinter"
 
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
@@ -80,6 +82,19 @@ import { deleteAsync } from "del";
 
 export const cleanBuild = async () => await deleteAsync("build");
 
+
+// lint
+
+const ALL_HTML = "build/*.html";
+
+export const lint = () =>
+	gulp
+		.src(ALL_HTML)
+		.pipe(htmlValidator.analyzer({ ignoreLevel: "info" }))
+		.pipe(htmlValidator.reporter({ throwErrors: true }));
+
+export const lintBEM = () => gulp.src(ALL_HTML).pipe(bemlinter());
+
 // Server
 
 const server = (done) => {
@@ -113,6 +128,8 @@ gulp.watch("source/*.html", gulp.series(html, reload));
 export const build = gulp.series(
 cleanBuild,
 copy,
+lint,
+lintBEM,
 optimizeImages,
 gulp.parallel(
 styles,
