@@ -63,7 +63,7 @@
 @media screen and (min-width: 320px) {
   .grade-block {
     position: relative;
-    margin: 55px 0 40px 20px;
+    margin: 57px 0 40px 20px;
   }
 
   .grade-block::before {
@@ -93,7 +93,7 @@
   .grade-block {
     display: grid;
     justify-items: center;
-    margin: 0 0 34px 0;
+    margin: 0 0 40px 0;
   }
 
   .grade-block::before {
@@ -128,9 +128,14 @@
   .grade-block__field {
     display: grid;
     grid-template-columns: repeat(2, 276px);
-    gap: 16px;
+    row-gap: 18px;
+    column-gap: 16px;
     justify-content: left;
     width: 575px;
+  }
+
+  .grade-block__radio + .grade-block__label .grade-block__check {
+    margin: -2px 17px 0 0;
   }
 }
 
@@ -138,7 +143,7 @@
   .grade-block {
     position: relative;
     font-size: 18px;
-    margin: 0 0 30px 0;
+    margin: 0 0 33px 0;
   }
 
   .grade-block::before {
@@ -168,6 +173,7 @@
   .grade-block__title {
     text-align: center;
     margin-top: 5px;
+    margin-bottom: 28px;
   }
 
   .grade-block__field {

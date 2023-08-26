@@ -10,10 +10,12 @@
   margin-bottom: 2px;
 }
 
-.socials-list__link {
-  display: grid;
-  place-items: center;
-  height: 100%;
+.socials-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
   background-color: #81b3d2;
 }
 
@@ -21,13 +23,13 @@
   fill: #ffffff;
 }
 
-.socials-list__link:hover {
+.socials-list__item:hover {
   background-color: #669ec0;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
 }
 
-.socials-list__link:active {
+.socials-list__item:active {
   background-color: #5496bd;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
